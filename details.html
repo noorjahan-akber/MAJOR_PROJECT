@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Trail Details</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #00000b06;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        /* Black top border with back button */
+        .top-bar {
+            width: 100%;
+            height: 40px;
+            background-color: rgb(247, 244, 244);
+            display: flex;
+            align-items: center;
+            padding-left: 15px;
+        }
+        .back-button {
+            color: rgb(13, 5, 5);
+            font-size: 16px;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .back-button:hover {
+            background-color: #333;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 40px;
+            background: white;
+            text-align: left;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .header-section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 40px;
+        }
+        .trail-title {
+            font-size: 42px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        .trail-subtitle {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .content-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .trail-left {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px;
+            padding-left: 40px;
+        }
+        .trail-images {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        .trail-images img {
+            width: 320px;
+            height: 219px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .trail-images img:hover {
+            transform: scale(1.05);
+        }
+        .trail-right {
+            flex: 1;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            font-family: 'Merriweather', serif;
+        }
+        .trail-right h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .trail-right p, .trail-right ul {
+            font-size: 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+        .trail-right ul {
+            padding-left: 25px;
+        }
+        /* Facilities Section */
+     /* Facilities Section */
+.facilities-section {
+    width: 90%;
+    margin: 40px auto;
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Container for Weather | Distance | Facilities */
+.facilities-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Ensure all sections have equal height */
+    gap: 21px;
+}
+
+/* Parent container to align items in a row */
+.facilities-container {
+    display: flex;
+    justify-content: space-between; /* Distributes elements evenly */
+    align-items: stretch; /* Ensures equal height */
+    gap: 20px; /* Space between items */
+    width: 90%;
+    margin: auto;
+}
+
+/* Individual sections: Weather, Distance, and Facilities */
+.weather-section, .distance-section, .facilities-content {
+    flex: 1; /* Ensures equal width */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex; /* Uses flexbox */
+    flex-direction: column;
+    justify-content: center;
+    background: url('blue.webp') no-repeat center center/cover;
+    background-size: cover;
+    color: white; /* Ensures readability */
+    min-height: 150px; /* Ensures proper height */
+}
+
+
+/* Facilities Title */
+.facilities-title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Facilities List Styling */
+.facilities-list {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    align-items: center;
+}
+
+/* Facility Item */
+.facility-item {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(22, 6, 6); /* White text for better contrast */
+    background: rgba(246, 243, 243, 0.986); /* Dark overlay for readability */
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    justify-content: center;
+}
+
+/* Fixing Oversized Icons */
+.facility-item img {
+    width: 28px;
+    height: 28px;
+}
+
+/* Distance Grid Layout */
+.distance-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    font-size: 20px;
+}
+
+/* Distance, Elevation, and Time Values */
+.distance-grid strong {
+    font-size: 24px; /* Slightly increased size for better visibility */
+    font-weight: bold;
+}
+
+/* Description Text */
+.distance-grid p {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+/* Additional Styling for Better Spacing */
+.distance-section h3,
+.weather-section h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 32px;
+    letter-spacing: 1px;
+}
+/* Reviews Container */
+.reviews-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 50px auto 0; /* Adds space before the review section */
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+    background: #f8f8f8;
+    border-radius: 12px;
+    border-top: 2px solid #ddd; /* Optional: Adds a separator */
+}
+
+
+/* Left Side: General Rating */
+.review-summary {
+    flex: 1;
+    max-width: 320px;
+    text-align: center;
+    padding: 25px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-heading {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1a3e1a;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.rating-number {
+    font-size: 52px;
+    font-weight: bold;
+    color: #1a3e1a;
+}
+
+.rating-star {
+    font-size: 26px;
+    color: #27ae60;
+}
+
+.rating-info p {
+    font-size: 15px;
+    color: gray;
+    margin: 5px 0;
+}
+
+/* Improved Rating Bar Styling */
+.rating-bars {
+    margin-top: 15px;
+}
+
+.rating-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    margin: 6px 0;
+}
+
+.progress-bar {
+    width: 130px;
+    height: 10px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar div {
+    height: 100%;
+    background: #27ae60;
+}
+
+/* Review Button */
+.review-btn {
+    background: #1a3e1a;
+    color: white;
+    border: none;
+    padding: 14px;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.review-btn:hover {
+    background: #145a14;
+}
+
+.extra-options {
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.extra-options a {
+    text-decoration: none;
+    color: #1a3e1a;
+    font-weight: 500;
+}
+
+/* Right Side: User Reviews */
+.user-reviews {
+    flex: 2;
+    padding-left: 30px;
+}
+
+/* Individual Review Card */
+.review {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    background: #ffffff;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.review:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.review-content {
+    background: #bd9e9e;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.review-content h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #1a3e1a;
+    font-weight: bold;
+}
+
+.stars {
+    color: #27ae60;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.review-date {
+    font-size: 14px;
+    color: gray;
+}
+
+.review-text {
+    font-size: 16px;
+    color: #333;
+    margin-top: 8px;
+}
+
+/* "+More" Button Styling */
+/* "+More" Button Styling */
+
+
+
+
+/* Container for the buttons under reviews */
+.review-buttons {
+    position: fixed;  /* Fixes it at the bottom */
+    bottom: 0; /* Aligns it to the bottom of the screen */
+    left: 0;
+    width: 100%; /* Full width */
+    background: #fff; /* White background */
+    padding: 15px 0;
+    display: flex;
+    justify-content: center; /* Centers the buttons */
+    gap: 20px; /* Space between buttons */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Shadow for visibility */
+    z-index: 1000; /* Ensures it stays on top */
+}
+
+/* Button Styling */
+.more-button, .direction-btn, .see-trail-btn {
+    background: #007BFF; /* Blue color (same as direction button) */
+    color: rgb(68, 98, 46);
+    border: none;
+    padding: 15px 30px; /* Uniform padding */
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    min-width: 180px; /* Consistent width */
+    text-align: center;
+}
+
+/* Hover Effects */
+.more-button:hover, .direction-btn:hover, .see-trail-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* If you want a different color for the More button */
+.more-button {
+    background: #1a3e1a; /* Dark green */
+}
+
+.more-button:hover {
+    background: #145214; /* Slightly lighter green */
+}
+
+
+
+        
+
+</style>
+</head>
+<body>
+    <!-- Top bar with back button inside -->
+    <div class="top-bar">
+        <a href="index.html" class="back-button">⬅ Back</a>
+    </div>
+
+    <div class="container">
+        <div class="header-section">
+            <h1 class="trail-title" id="trail-name">Loading...</h1>
+            <p class="trail-subtitle" id="trail-info">⭐ ... • ... • ... • Est. ...</p>
+        </div>
+
+        <div class="content-section">
+            <div class="trail-left">
+                <div class="trail-images" id="trail-images">
+                    <!-- Images will be inserted dynamically -->
+                </div>
+            </div>
+
+            <div class="trail-right">
+                <h3>Trail Description</h3>
+                <p id="trail-description">Loading description...</p>
+                <h3>Trail Highlights</h3>
+                <ul id="trail-highlights">
+                    <!-- Highlights will be inserted dynamically -->
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+      <!-- Facilities & Weather Section (Same Row) -->
+<div class="facilities-section">
+    <div class="facilities-container">
+        <div class="weather-section">
+            <h3 class="weather-title">Weather Update</h3>
+            <div id="weather-info" class="weather-info">Fetching weather...</div>
+        </div>
+
+        <div class="distance-section">
+            <h3>Distance & Travel Time</h3>
+            <div class="distance-grid">
+                <div>
+                    <strong id="distance">--</strong> km
+                    <p>Distance</p>
+                </div>
+                <div>
+                    <strong id="elevation">69</strong> m
+                    <p>Elevation Gain</p>
+                </div>
+                <div>
+                    <strong id="travel-time">--</strong>
+                    <p>Estimated Time</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="facilities-content">
+            <h3 class="facilities-title">Facilities</h3>
+            <div class="facilities-list" id="facilities-list">
+                <!-- Facilities will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+               
+                
+                <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                    // Extract selected trail from URL parameters or localStorage
+                    const urlParams = new URLSearchParams(window.location.search);
+                    let trailName = urlParams.get("trail") || localStorage.getItem("selectedTrail");
+                
+                    if (!trailName) {
+                        console.error("Trail not found or missing from URL/localStorage.");
+                        return;
+                    }
+                
+                    fetch("trails.json")
+                        .then(response => response.json())
+                        .then(trailsData => {
+                            const trail = trailsData[trailName];
+                
+                            if (trail && trail.facilities) {
+                                const facilitiesContainer = document.getElementById("facilities-list");
+                                facilitiesContainer.innerHTML = ""; // Clear existing content
+                
+                                trail.facilities.forEach(facility => {
+                                    let facilityItem = document.createElement("div");
+                                    facilityItem.classList.add("facility-item");
+                                    facilityItem.innerHTML = `<img src="${facility.icon}" alt="${facility.type}"> ${facility.name}`;
+                                    facilitiesContainer.appendChild(facilityItem);
+                                });
+                            } else {
+                                console.error("Facilities data not found for", trailName);
+                            }
+                        })
+                        .catch(error => console.error("Error fetching facilities:", error));
+                });
+                </script>
+                
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const urlParams = new URLSearchParams(window.location.search);
+    let trailName = urlParams.get("trail");
+
+    if (!trailName) {
+        document.getElementById("weather-info").innerHTML = "<p>Trail not found</p>";
+        return;
+    }
+
+    trailName = trailName.trim(); // Remove extra spaces
+
+    fetch("trails.json")
+        .then(response => response.json())
+        .then(trailsData => {
+            console.log("Available Trails:", Object.keys(trailsData)); // Debugging
+            console.log("Requested Trail:", trailName); // Debugging
+
+            const trail = trailsData[trailName];
+
+            if (trail && trail.coordinates) {
+                const apiKey = "2bcf0ad3f496ce988fb9ccb0014e5c27";
+                const lat = trail.coordinates[1]; // Latitude
+                const lon = trail.coordinates[0]; // Longitude
+                const weatherApiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
+
+                console.log("Fetching weather from:", weatherApiUrl); // Debugging
+
+                fetch(weatherApiUrl)
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error(`HTTP error! Status: ${response.status}`);
+                        }
+                        return response.json();
+                    })
+                    .then(data => {
+                        console.log("Weather Data:", data); // Debugging
+
+                        document.getElementById("weather-info").innerHTML = `
+                            <h3 style="color: #d9534f;">${new Date().toLocaleString()}</h3>
+                            <h2 style="font-size: 22px; font-weight: bold;">${trail.name}</h2>
+                            <p style="font-size: 30px; font-weight: bold;">${data.main.temp}°C</p>
+                            <p style="font-style: italic;">Feels like ${data.main.feels_like}°C. ${data.weather[0].description}</p>
+                            <p>🌧️ ${data.rain ? data.rain["1h"] + "mm Rain" : "No Rain"}</p>
+                            <p>💨 ${data.wind.speed} m/s, ${data.wind.deg}°</p>
+                            <p>🌡️ ${data.main.pressure} hPa | Humidity: ${data.main.humidity}%</p>
+                            <p>🌅 Sunrise: ${new Date(data.sys.sunrise * 1000).toLocaleTimeString()}</p>
+                            <p>🌇 Sunset: ${new Date(data.sys.sunset * 1000).toLocaleTimeString()}</p>
+                        `;
+                    })
+                    .catch(error => {
+                        console.error("Error fetching weather data:", error);
+                        document.getElementById("weather-info").innerHTML = `<p>Unable to fetch weather data: ${error.message}</p>`;
+                    });
+            } else {
+                document.getElementById("weather-info").innerHTML = "<p>Trail not found</p>";
+            }
+        })
+        .catch(error => console.error("Error fetching trail data:", error));
+});
+
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    // Get selected trail from localStorage
+    let selectedTrail = JSON.parse(localStorage.getItem("selectedTrail"));
+
+    if (!selectedTrail || !selectedTrail.coordinates) {
+        console.error("Trail not found or missing coordinates.");
+        document.getElementById("distance").textContent = "N/A km";
+        document.getElementById("travel-time").textContent = "N/A";
+        return;
+    }
+
+    const trailLat = selectedTrail.coordinates[1]; // Latitude
+    const trailLon = selectedTrail.coordinates[0]; // Longitude
+
+    function fetchDistanceAndTime() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(position => {
+                const userLat = position.coords.latitude;
+                const userLon = position.coords.longitude;
+
+                const mapboxApiKey = "pk.eyJ1Ijoic2hhaHVscHMiLCJhIjoiY200aXFxYWF2MDVvczJqczl0OGIzeWxzZiJ9.Lb88xOzFwHh1zZ8f6o5nhA";
+                const directionsUrl = `https://api.mapbox.com/directions/v5/mapbox/driving/${userLon},${userLat};${trailLon},${trailLat}?access_token=${mapboxApiKey}&geometries=geojson`;
+
+                fetch(directionsUrl)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.routes && data.routes.length > 0) {
+                            const route = data.routes[0];
+                            const distanceKm = (route.distance / 1000).toFixed(1);
+                            const durationMin = Math.round(route.duration / 60);
+                            const hours = Math.floor(durationMin / 60);
+                            const minutes = durationMin % 60;
+
+                            document.getElementById("distance").textContent = `${distanceKm} km`;
+                            document.getElementById("travel-time").textContent = 
+                                hours > 0 ? `${hours} hr ${minutes} min` : `${minutes} min`;
+
+                        } else {
+                            console.warn("No route found. Defaulting to N/A.");
+                            document.getElementById("distance").textContent = "N/A km";
+                            document.getElementById("travel-time").textContent = "N/A";
+                        }
+                    })
+                    .catch(error => {
+                        console.error("Error fetching directions:", error);
+                        document.getElementById("distance").textContent = "N/A km";
+                        document.getElementById("travel-time").textContent = "N/A";
+                    });
+            }, error => {
+                console.error("Error getting location:", error);
+                document.getElementById("distance").textContent = "N/A km";
+                document.getElementById("travel-time").textContent = "N/A";
+            });
+        } else {
+            console.error("Geolocation is not supported by this browser.");
+            document.getElementById("distance").textContent = "N/A km";
+            document.getElementById("travel-time").textContent = "N/A";
+        }
+    }
+
+    fetchDistanceAndTime();
+});
+
+</script>
+<br>
+<div class="reviews-container">
+    <!-- Left Side: General Rating -->
+    <div class="review-summary">
+        <h2 class="section-heading">General Rating</h2>
+        <h1 id="rating-number" class="rating-number">Loading...</h1>
+        <span class="rating-star">⭐</span>
+        <div class="rating-info">
+            <p id="review-count" class="review-count">0 reviews</p>
+            <p id="activity-count" class="activity-count">Loading...</p>
+        </div>
+
+        <!-- Rating Distribution -->
+        <div class="rating-bars" id="rating-bars">
+            <!-- Dynamic rating bars will be inserted here -->
+        </div>
+
+        <button class="review-btn" onclick="openReviewForm()">Review Trail</button>
+        <div class="extra-options">
+            <a href="#">Mark as completed</a> • <a href="#">Suggest edit</a>
+        </div>
+    </div>
+
+    <!-- Right Side: User Reviews -->
+    <div class="user-reviews" id="user-reviews">
+        <!-- Reviews will be inserted dynamically -->
+    </div>
+<br>
+    <!-- "+ More Reviews" Button -->
+    <button id="show-more-reviews" class="more-button" style="display:none;">+ More Reviews</button>
+<br>
+    <!-- Buttons Below -->
+    <div class="review-buttons">
+        <button class="direction-btn" onclick="window.location.href='get-directions.html';">
+            🚗 Get Directions
+        </button>
+        <button class="see-trail-btn" onclick="seeTrail()">
+            🌿 See Trail
+        </button>
+    </div>
+</div>
+
+<script>
+function loadReviews() {
+    const urlParams = new URLSearchParams(window.location.search);
+    let trailName = urlParams.get("trail") || localStorage.getItem("selectedTrail");
+
+    if (!trailName) {
+        console.error("Trail name not found in URL or localStorage.");
+        return;
+    }
+
+    fetch("trails.json")
+        .then(response => response.json())
+        .then(trailsData => {
+            const trail = trailsData[trailName];
+
+            if (!trail) {
+                console.warn("No trail data found.");
+                return;
+            }
+
+            // Update General Rating & Review Count
+            document.getElementById("rating-number").innerText = trail.rating || "N/A";
+            document.getElementById("review-count").innerText = `${trail.reviews.length} reviews`;
+            document.getElementById("activity-count").innerText = `${trail.activities || 0} activities`;
+
+            // Generate Rating Distribution
+            const ratingBars = document.getElementById("rating-bars");
+            ratingBars.innerHTML = "";
+            let ratingDistribution = trail.ratingDistribution || { "5": 0, "4": 0, "3": 0, "2": 0, "1": 0 };
+
+            Object.entries(ratingDistribution).forEach(([stars, percentage]) => {
+                ratingBars.innerHTML += `
+                    <div class="rating-row">
+                        <span>⭐ ${stars}</span>
+                        <div class="progress-bar"><div style="width: ${percentage}%"></div></div>
+                    </div>
+                `;
+            });
+
+            // Insert Reviews
+            const reviewsContainer = document.getElementById("user-reviews");
+            reviewsContainer.innerHTML = ""; // Clear existing content
+
+            trail.reviews.forEach((review, index) => {
+                let reviewHTML = `
+                    <div class="review" style="${index >= 2 ? 'display:none;' : ''}">
+                        <div class="review-content">
+                            <h4>${review.user || 'Anonymous'} <span class="stars">${review.stars || '⭐⭐⭐⭐'}</span></h4>
+                            <p class="review-date">${review.date || new Date().toLocaleDateString()} • ${review.activity || 'User Review'}</p>
+                            <p class="review-text">${review.text}</p>
+                            ${review.images && review.images.length > 0 
+    ? review.images.map(img => `<img src="${img}" style="width:100px; height:100px; border-radius:5px; margin:5px;">`).join("") 
+    : ""}
+                        </div>
+                    </div>
+                `;
+                reviewsContainer.innerHTML += reviewHTML;
+            });
+
+            // Show "+ More Reviews" button if more than 2 reviews exist
+            if (trail.reviews.length > 2) {
+                document.getElementById("show-more-reviews").style.display = "block";
+            }
+        })
+        .catch(error => console.error("Error fetching reviews:", error));
+}
+
+// Show More Reviews Button Logic
+document.getElementById("show-more-reviews").addEventListener("click", function() {
+    document.querySelectorAll(".review").forEach(review => review.style.display = "block");
+    this.style.display = "none"; // Hide button after expanding
+});
+
+
+function openReviewForm() {
+    let reviewForm = document.getElementById("review-form");
+
+    if (!reviewForm) {
+        reviewForm = document.createElement("div");
+        reviewForm.id = "review-form";
+        reviewForm.innerHTML = `
+            <h3>Submit a Review</h3>
+            <input type="text" id="review-user" placeholder="Your Name">
+            <textarea id="review-text" rows="4" placeholder="Write your review here..."></textarea><br>
+            <input type="number" id="review-rating" min="1" max="5" placeholder="Rating (1-5)">
+            <button onclick="submitReview()">Submit</button>
+            <button onclick="closeReviewForm()">Cancel</button>
+        `;
+        reviewForm.style.padding = "15px";
+        reviewForm.style.background = "#f8f8f8";
+        reviewForm.style.border = "1px solid #ccc";
+        reviewForm.style.width = "300px";
+        reviewForm.style.position = "fixed";
+        reviewForm.style.top = "20%";
+        reviewForm.style.left = "50%";
+        reviewForm.style.transform = "translate(-50%, -20%)";
+        reviewForm.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.2)";
+        reviewForm.style.zIndex = "1000";
+
+        document.body.appendChild(reviewForm);
+    } else {
+        reviewForm.style.display = "block";
+    }
+}
+
+function closeReviewForm() {
+    document.getElementById("review-form").style.display = "none";
+}
+
+function submitReview() {
+    let user = document.getElementById("review-user").value || "Anonymous";
+    let text = document.getElementById("review-text").value;
+    let rating = document.getElementById("review-rating").value || 5;
+
+    if (!text.trim()) {
+        alert("Please enter a review before submitting!");
+        return;
+    }
+
+    const newReview = {
+        user: user,
+        stars: "⭐".repeat(rating),
+        date: new Date().toLocaleDateString(),
+        activity: "User Review",
+        text: text
+    };
+
+    const reviewsContainer = document.getElementById("user-reviews");
+    let reviewHTML = `
+        <div class="review">
+            <div class="review-content">
+                <h4>${newReview.user} <span class="stars">${newReview.stars}</span></h4>
+                <p class="review-date">${newReview.date} • ${newReview.activity}</p>
+                <p class="review-text">${newReview.text}</p>
+            </div>
+        </div>
+    `;
+    reviewsContainer.innerHTML += reviewHTML;
+
+    closeReviewForm();
+}
+
+// 🔹 Add the functions ABOVE this line!
+window.onload = loadReviews;
+
+
+// Load reviews when the page loads
+window.onload = loadReviews;
+</script>
+
+
+
+
+
+</body>
+</html>

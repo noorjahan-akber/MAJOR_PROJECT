@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Off-Road Trail Navigation</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: rgba(187, 183, 185, 0.804);
+        padding: 20px;
+      }
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        background: rgb(233, 242, 247);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      .header {
+        position: relative;
+        background: url('background.jpg') no-repeat center center/cover;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 32px;
+        font-weight: bold;
+      }
+      .header-buttons {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    gap: 10px; /* Adds spacing between buttons */
+}
+
+.community, .nearby-trails {
+    background: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.community:hover, .nearby-trails:hover {
+    background: #f0f0f0;
+}
+
+      .search-bar {
+        margin: 20px auto;
+        max-width: 600px;
+        display: flex;
+        align-items: center;
+        background: white;
+        border-radius: 30px;
+        padding: 10px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+      }
+      .search-bar input {
+        width: 100%;
+        border: none;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 30px;
+        outline: none;
+      }
+      .trails {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+      }
+      .trail-card {
+        width: 250px;
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        text-align: left;
+        cursor: pointer;
+      }
+      .trail-card img {
+        width: 100%;
+        height: 150px;
+        border-radius: 10px;
+      }
+    </style>
+    <script>
+     function openTrailDetails(trailName) {
+    window.location.href = `details.html?trail=${encodeURIComponent(trailName)}`;
+}
+
+    </script>
+  </head>
+  <body>
+    <div class="header-buttons">
+      <div class="nearby-trails" onclick="openNearbyTrails()">Nearby Trails</div>
+      <div class="community" onclick="openCommunity()">Community</div>
+  </div>
+  
+  <h1 class="welcome-message">Welcome, <span id="username">User</span>!</h1>
+    </div>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Search by trail name" />
+  </div>
+    <div class="container">
+      <h2>Local favorites near <span id="location">Your Area</span></h2>
+      <div class="trails">
+        <div class="trail-card" data-name="Vattavada" onclick="openTrailDetails('Vattavada')">
+          <img src="vatta 1.jpg" alt="Vattavada Trail" />
+          <h3>Vattavada</h3>
+          <p>Kerala, India</p>
+          <p>⭐ 4.7 • Hard • 14.0 km</p>
+      </div>
+      
+    
+      <div class="trail-card" data-name="Nelliyambathi" data-lat="11.1136" data-lon="76.7139" onclick="openTrailDetails('Nelliyambathi')">
+    <img src="nelliyampathy.jpg" alt="Nelliyambathi Trail" />
+    <h3>Nelliyambathi</h3>
+    <p>Kerala, India</p>
+    <p>⭐ 4.2 • Moderate • 15.6 km</p>
+</div>
+
+    
+    <div class="trail-card" data-name="Vagamon" onclick="openTrailDetails('Vagamon')">
+        <img src="vagamon.jpg" alt="Vagamon Trail" />
+        <h3>Vagamon</h3>
+        <p>Kerala, India</p>
+        <p>⭐ 4.6 • Moderate • 10.2 km</p>
+    </div>
+    
+    <div class="trail-card" data-name="Agasthyakoodam" onclick="openTrailDetails('Agasthyakoodam')">
+        <img src="agasthyakoodam.jpg" alt="Agasthyakoodam Trail" />
+        <h3>Agasthyakoodam</h3>
+        <p>Kerala, India</p>
+        <p>⭐ 4.9 • Hard • 18.0 km</p>
+    </div>
+    
+    <div class="trail-card" data-name="Sholayar Forest Reserve" onclick="openTrailDetails('Sholayar Forest Reserve')">
+        <img src="images/sholayar.jpg" alt="Sholayar Forest Trail" />
+        <h3>Sholayar Forest Reserve</h3>
+        <p>Kerala, India</p>
+        <p>⭐ 4.4 • Hard • 15.0 km</p>
+    </div>
+    
+    <div class="trail-card" data-name="Kallelimedu" onclick="openTrailDetails('Kallelimedu')">
+        <img src="images/kallelimedu.jpg" alt="Kallelimedu Trail" />
+        <h3>Kallelimedu</h3>
+        <p>Kerala, India</p>
+        <p>⭐ 4.3 • Moderate • 12.0 km</p>
+    </div>
+    
+    <div class="trail-card" data-name="Vythiri" onclick="openTrailDetails('Vythiri')">
+        <img src="images/vythiri.jpg" alt="Vythiri Trail" />
+        <h3>Vythiri</h3>
+        <p>Kerala, India</p>
+        <p>⭐ 4.5 • Moderate • 10.0 km</p>
+    </div>
+    
+    <div class="trail-card" data-name="Pannipara Hill Top" onclick="openTrailDetails('Pannipara Hill Top')">
+        <img src="images/pannipara.jpg" alt="Pannipara Hill Top Trail" />
+        <h3>Pannipara Hill Top</h3>
+        <p>Kerala, India</p>
+        <p>⭐ 4.2 • Hard • 12.0 km</p>
+    </div>
+    
+    <div class="trail-card" data-name="Ramangara" onclick="openTrailDetails('Ramangara')">
+        <img src="images/ramangara.jpg" alt="Ramangara Trail" />
+        <h3>Ramangara</h3>
+        <p>Karnataka, India</p>
+        <p>⭐ 4.5 • Moderate • 8.5 km</p>
+    </div>
+    
+    <div class="trail-card" data-name="Illithod Forest Trail" onclick="openTrailDetails('Illithod Forest Trail')">
+        <img src="images/illithod.jpg" alt="Illithod Forest Trail" />
+        <h3>Illithod Forest Trail</h3>
+        <p>Kerala, India</p>
+        <p>⭐ 4.3 • Moderate • 9.5 km</p>
+    </div>
+    
+    <div class="trail-card" data-name="Sabarimala Forest Trail" onclick="openTrailDetails('Sabarimala Forest Trail')">
+        <img src="images/sabarimala.jpg" alt="Sabarimala Forest Trail" />
+        <h3>Sabarimala Forest Trail</h3>
+        <p>Kerala, India</p>
+        <p>⭐ 4.8 • Hard • 16.0 km</p>
+    </div>
+    
+    <div class="trail-card" data-name="Anamudi" onclick="openTrailDetails('Anamudi')">
+        <img src="images/anamudi.jpg" alt="Anamudi Trail" />
+        <h3>Anamudi</h3>
+        <p>Kerala, India</p>
+        <p>⭐ 4.9 • Hard • 13.5 km</p>
+    </div>
+    
+    <div class="trail-card" data-name="Brahmagiri Hills" onclick="openTrailDetails('Brahmagiri Hills')">
+        <img src="images/brahmagiri.jpg" alt="Brahmagiri Hills" />
+        <h3>Brahmagiri Hills</h3>
+        <p>Kerala, India</p>
+        <p>⭐ 4.4 • Moderate • 10.5 km</p>
+    </div>
+    
+    <div class="trail-card" data-name="Kookal Trail" onclick="openTrailDetails('Kookal Trail')">
+        <img src="images/kookal.jpg" alt="Kookal Trail" />
+        <h3>Kookal Trail</h3>
+        <p>Kerala, India</p>
+        <p>⭐ 4.2 • Moderate • 8.0 km</p>
+    </div>
+    
+    <div class="trail-card" data-name="Mullanthandu" onclick="openTrailDetails('Mullanthandu')">
+        <img src="images/mullanthandu.jpg" alt="Mullanthandu Trail" />
+        <h3>Mullanthandu</h3>
+        <p>Kerala, India</p>
+        <p>⭐ 4.5 • Moderate • 9.0 km</p>
+    </div>
+    
+    <div class="trail-card" data-name="Varatumedu" onclick="openTrailDetails('Varatumedu')">
+        <img src="images/varatumedu.jpg" alt="Varatumedu Trail" />
+        <h3>Varatumedu</h3>
+        <p>Kerala, India</p>
+        <p>⭐ 4.3 • Moderate • 7.5 km</p>
+    </div>
+    
+    <div class="trail-card" data-name="Naalumala" onclick="openTrailDetails('Naalumala')">
+        <img src="images/naalumala.jpg" alt="Naalumala Trail" />
+        <h3>Naalumala</h3>
+        <p>Kerala, India</p>
+        <p>⭐ 4.4 • Moderate • 10.0 km</p>
+    </div>
+    
+    <div class="trail-card" data-name="Swargam Medu" onclick="openTrailDetails('Swargam Medu')">
+        <img src="images/swargam.jpg" alt="Swargam Medu Trail" />
+        <h3>Swargam Medu</h3>
+        <p>Kerala, India</p>
+        <p>⭐ 4.6 • Hard • 11.5 km</p>
+    </div>
+    
+    <div class="trail-card" data-name="Therivumala" onclick="openTrailDetails('Therivumala')">
+        <img src="images/therivumala.jpg" alt="Therivumala Trail" />
+        <h3>Therivumala</h3>
+        <p>Kerala, India</p>
+        <p>⭐ 4.2 • Moderate • 9.5 km</p>
+    </div>
+    
+    <div class="trail-card" data-name="Ulupunni" onclick="openTrailDetails('Ulupunni')">
+        <img src="images/ulupunni.jpg" alt="Ulupunni Trail" />
+        <h3>Ulupunni</h3>
+        <p>Kerala, India</p>
+        <p>⭐ 4.7 • Hard • 12.0 km</p>
+    </div>
+    
+    <div class="trail-card" data-name="Urumbikara" onclick="openTrailDetails('Urumbikara')">
+        <img src="images/urumbikara.jpg" alt="Urumbikara Trail" />
+        <h3>Urumbikara</h3>
+        <p>Kerala, India</p>
+        <p>⭐ 4.5 • Moderate • 10.0 km</p>
+    </div>
+    
+    <div class="trail-card" data-name="Kakkadampoyil" onclick="openTrailDetails('Kakkadampoyil')">
+        <img src="images/kakkadampoyil.jpg" alt="Kakkadampoyil Trail" />
+        <h3>Kakkadampoyil</h3>
+        <p>Kerala, India</p>
+        <p>⭐ 4.3 • Moderate • 9.0 km</p>
+    </div>
+    
+    <div class="trail-card" data-name="Kurushimala" onclick="openTrailDetails('Kurushimala')">
+        <img src="images/kurushimala.jpg" alt="Kurushimala Trail" />
+        <h3>Kurushimala</h3>
+        <p>Kerala, India</p>
+        <p>⭐ 4.6 • Moderate • 11.5 km</p>
+    </div>
+    
+    </div>
+  </div>
+  <script>
+    document.getElementById("searchInput").addEventListener("keyup", function () {
+        let searchValue = this.value.toLowerCase();
+        let trails = document.querySelectorAll(".trail-card");
+
+        trails.forEach(function (trail) {
+            let name = trail.getAttribute("data-name").toLowerCase();
+            
+            // Display only if the trail name starts with the search input
+            if (name.startsWith(searchValue)) {
+                trail.style.display = "block";
+            } else {
+                trail.style.display = "none";
+            }
+        });
+    });
+</script>
+ <script>
+document.getElementById("nearbyTrailsButton").addEventListener("click", function () {
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(showNearbyTrails, showError);
+    } else {
+        alert("Geolocation is not supported by this browser.");
+    }
+});
+
+function showNearbyTrails(position) {
+    let userLat = position.coords.latitude;
+    let userLon = position.coords.longitude;
+    let maxDistance = 50; // Set radius in kilometers
+
+    let trails = document.querySelectorAll(".trail-card");
+
+    trails.forEach(trail => {
+        let trailLat = parseFloat(trail.getAttribute("data-lat"));
+        let trailLon = parseFloat(trail.getAttribute("data-lon"));
+
+        let distance = calculateDistance(userLat, userLon, trailLat, trailLon);
+
+        if (distance <= maxDistance) {
+            trail.style.display = "block";
+        } else {
+            trail.style.display = "none";
+        }
+    });
+}
+
+// Function to calculate distance between two coordinates (Haversine formula)
+function calculateDistance(lat1, lon1, lat2, lon2) {
+    const R = 6371; // Radius of Earth in km
+    let dLat = (lat2 - lat1) * (Math.PI / 180);
+    let dLon = (lon2 - lon1) * (Math.PI / 180);
+
+    let a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+            Math.cos(lat1 * (Math.PI / 180)) * Math.cos(lat2 * (Math.PI / 180)) *
+            Math.sin(dLon / 2) * Math.sin(dLon / 2);
+
+    let c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    return R * c; // Distance in km
+}
+
+function showError(error) {
+    alert("Error getting location: " + error.message);
+}
+</script>
+  
+  </body>
+  </html>
+  

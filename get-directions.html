@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vattavada Trail Navigation</title>
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.1/mapbox-gl-directions.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.1/mapbox-gl-directions.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+        }
+
+        /* Map takes 82% of the screen */
+        #map {
+            width: 82%;
+            height: 100vh;
+        }
+
+        /* Right Sidebar */
+        .sidebar {
+            width: 18%;
+            height: 100vh;
+            background: black;
+            color: white;
+            padding: 15px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .sidebar h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        /* Mapbox Directions Panel */
+        .directions-container {
+            flex-grow: 1;
+        }
+
+        .mapboxgl-ctrl-directions {
+            height: 100%;
+            width: 100%;
+        }
+
+        /* Weather Section */
+        .weather-info {
+            background: #4c7272;
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+
+        /* Speaker Button */
+        .speaker-btn {
+            width: 100%;
+            padding: 12px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-top: 10px;
+            background: #28a745;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Map Container -->
+    <div id="map"></div>
+
+    <!-- Right Sidebar -->
+    <div class="sidebar">
+        <h2>Route to Vattavada Trail</h2>
+        <div class="directions-container"></div> <!-- Mapbox Directions Panel -->
+        <button id="toggle-speaker" class="speaker-btn">🔊 Enable Voice Guidance</button>
+        <div id="weather-info" class="weather-info">Fetching weather...</div> <!-- Weather Section -->
+    </div>
+
+    <script>
+        mapboxgl.accessToken = "pk.eyJ1Ijoic2hhaHVscHMiLCJhIjoiY200aXFxYWF2MDVvczJqczl0OGIzeWxzZiJ9.Lb88xOzFwHh1zZ8f6o5nhA"; // Replace with your API key
+
+        const destination = [77.1665, 10.2014]; // Fixed Destination: Vattavada Trail
+        let speakerEnabled = false; // Voice guidance initially OFF
+        let currentStepIndex = 0;
+        let steps = [];
+
+        // Initialize Map
+        const map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: destination,
+            zoom: 10
+        });
+
+        // Add Navigation Controls
+        map.addControl(new mapboxgl.NavigationControl());
+
+        // Mapbox Directions Plugin (Will be inside the sidebar)
+        const directions = new MapboxDirections({
+            accessToken: mapboxgl.accessToken,
+            unit: 'metric',
+            profile: 'mapbox/driving',
+            controls: { inputs: false }, // Hide input fields
+        });
+
+        // Add Directions inside the sidebar
+        document.querySelector(".directions-container").appendChild(directions.onAdd(map));
+
+        // Prevent destination from changing
+        map.on('click', (event) => {
+            event.preventDefault();
+            event.stopPropagation();
+        });
+
+        // Get User Location
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(position => {
+                const userLocation = [position.coords.longitude, position.coords.latitude];
+
+                // Add User Marker
+                new mapboxgl.Marker({ color: "blue" })
+                    .setLngLat(userLocation)
+                    .setPopup(new mapboxgl.Popup().setText("Your Location"))
+                    .addTo(map);
+
+                // Set Route from User Location to Vattavada
+                directions.setOrigin(userLocation);
+                directions.setDestination(destination);
+            }, error => {
+                alert("Unable to fetch your location.");
+                console.error(error);
+            });
+        }
+
+        // Fetch and Display Weather Info
+        function fetchWeather() {
+            const apiKey = "2bcf0ad3f496ce988fb9ccb0014e5c27"; // Replace with your OpenWeather API Key
+            const weatherApiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${destination[1]}&lon=${destination[0]}&units=metric&appid=${apiKey}`;
+
+            fetch(weatherApiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById("weather-info").innerHTML = `
+                        <p>🌡️ ${data.main.temp}°C</p>
+                        <p>${data.weather[0].description}</p>
+                        <p>💨 Wind: ${data.wind.speed} m/s</p>
+                    `;
+                })
+                .catch(error => console.error("Error fetching weather:", error));
+        }
+
+        fetchWeather();
+        setInterval(fetchWeather, 60000); // Update every minute
+
+        // Enable Voice Guidance
+        document.getElementById("toggle-speaker").addEventListener("click", function () {
+            speakerEnabled = !speakerEnabled;
+            this.textContent = speakerEnabled ? "🔇 Disable Voice Guidance" : "🔊 Enable Voice Guidance";
+            if (speakerEnabled && steps.length > 0) {
+                speakText(`Starting navigation to Vattavada Trail. ${steps[0].maneuver.instruction}`);
+            } else {
+                window.speechSynthesis.cancel(); // Stop speaking
+            }
+        });
+
+        // Listen for route updates and enable voice guidance
+        directions.on('route', (event) => {
+            if (event.route && event.route.length > 0) {
+                steps = event.route[0].legs[0].steps;
+                currentStepIndex = 0;
+            }
+        });
+
+        // Voice Navigation (Reads only next step upon reaching)
+        function updateVoiceGuidance(userLocation) {
+            if (currentStepIndex < steps.length) {
+                const step = steps[currentStepIndex];
+                const stepLocation = step.maneuver.location;
+
+                const distance = getDistance(userLocation, stepLocation);
+                if (distance < 30) { // Read next step when within 30m
+                    speakText(step.maneuver.instruction);
+                    currentStepIndex++;
+                }
+            }
+        }
+
+        // Function to calculate distance between two points
+        function getDistance(loc1, loc2) {
+            const R = 6371e3; // Earth radius in meters
+            const φ1 = loc1[1] * Math.PI / 180;
+            const φ2 = loc2[1] * Math.PI / 180;
+            const Δφ = (loc2[1] - loc1[1]) * Math.PI / 180;
+            const Δλ = (loc2[0] - loc1[0]) * Math.PI / 180;
+
+            const a = Math.sin(Δφ / 2) ** 2 + Math.cos(φ1) * Math.cos(φ2) * Math.sin(Δλ / 2) ** 2;
+            const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+
+            return R * c;
+        }
+
+        // Text-to-Speech Function
+        function speakText(text) {
+            if (speakerEnabled) {
+                const speech = new SpeechSynthesisUtterance(text);
+                window.speechSynthesis.speak(speech);
+            }
+        }
+    </script>
+
+</body>
+</html>

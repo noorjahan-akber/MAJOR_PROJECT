@@ -1,0 +1,480 @@
+{
+    
+     "Vattavada": {
+    "name": "Vattavada Trail",
+    "rating": "⭐ 4.6",
+    "difficulty": "Moderate",
+    "distance": "12.5 km",
+    "time": "Est. 4h 10m",
+    "coordinates": [77.1870, 10.1846],
+    "images": ["vatta 1.jpg", "vatta 2.jpg", "vatta 3.jpg", "vatta 4.jpg"],
+    "description": "Vattavada, located near Munnar, is a paradise for trekkers. Known for its terraced farms and breathtaking views, this trail takes you through lush greenery, hilltop villages, and diverse flora and fauna.",
+    "highlights": [
+        "Panoramic views of Munnar’s valleys and tea estates.",
+        "Opportunities to see rare birds and wildlife.",
+        "Local farm produce like strawberries and plums.",
+        "Cool climate with refreshing breezes."
+    ],
+    "facilities": [
+        {
+            "name": "Sandalwood Forest Homestay",
+            "icon": "hotel-icon.png",
+            "type": "Accommodation"
+        },
+        {
+            "name": "Farm Fresh Restaurant",
+            "icon": "restaurant-icon.jpg",
+            "type": "Restaurant"
+        },
+        {
+            "name": "Trail Entrance Info",
+            "icon": "info-icon.png",
+            "type": "Info Center"
+        },
+        {
+            "name": "24/7 Pharmacy",
+            "icon": "pharmacy-icon.jpg",
+            "type": "Pharmacy"
+        },
+        {
+            "name": "Vattavada Health Center",
+            "icon": "medical-icon.png",
+            "type": "Hospital"
+        }
+    ],
+    "ratingDistribution": {
+        "5": 70,
+        "4": 20,
+        "3": 7,
+        "2": 2,
+        "1": 1
+    },
+    "reviews": [
+        {
+            "user": "Rahul Nair",
+            "stars": "⭐⭐⭐⭐⭐",
+            "date": "Feb 10, 2024",
+            "activity": "Hiking",
+            "text": "Absolutely stunning trail! The fresh air and greenery make it a must-visit.",
+            "images": ["vatta 2.jpg"]
+        },
+        {
+            "user": "Meera S",
+            "stars": "⭐⭐⭐⭐",
+            "date": "Jan 15, 2024",
+            "activity": "Trekking",
+            "text": "Loved the views, but some parts of the trail were a bit slippery.",
+            "images": []
+        },
+        {
+            "user": "Arjun Kumar",
+            "stars": "⭐⭐⭐⭐⭐",
+            "date": "Dec 5, 2023",
+            "activity": "Adventure",
+            "text": "Perfect for nature lovers. Great for a weekend escape from city life.",
+            "images": ["vatta 4.jpg", "review3.jpg"]
+        },
+        {
+            "user": "Sneha P",
+            "stars": "⭐⭐⭐⭐",
+            "date": "Nov 22, 2023",
+            "activity": "Solo Trip",
+            "text": "Very peaceful and less crowded compared to other Munnar trails.",
+            "images": []
+        }
+    ]
+     },
+
+        "Nelliyambathi": {
+    "name": "Nelliyambathi Trail",
+    "rating": "⭐ 4.2",
+    "difficulty": "Moderate",
+    "distance": "15.6 km",
+    "time": "Est. 5h 20m",
+    "coordinates": [76.5613, 10.6232],
+    "images": ["nelliyambathi1.jpg", "nelliyambathi2.jpg", "nelliyambathi3.jpg", "nelliyambathi4.jpg"],
+    "description": "Nelliyambathi is a lush green hill station perfect for nature lovers, offering stunning views and dense forests. This trail provides a serene trekking experience surrounded by rich biodiversity and peaceful landscapes.",
+    "highlights": [
+        "Dense green forests and scenic viewpoints.",
+        "Rich biodiversity with rare wildlife species.",
+        "Peaceful trekking experience away from crowds.",
+        "Ideal spot for camping and photography."
+    ],
+    "facilities": [
+        {
+            "name": "Nelliyambathi Hilltop Homestay",
+            "icon": "hotel-icon.png",
+            "type": "Accommodation"
+        },
+        {
+            "name": "Forest Breeze Restaurant",
+            "icon": "restaurant-icon.jpg",
+            "type": "Restaurant"
+        },
+        {
+            "name": "Trail Information Center",
+            "icon": "info-icon.png",
+            "type": "Info Center"
+        },
+        {
+            "name": "24/7 Medical Store",
+            "icon": "pharmacy-icon.jpg",
+            "type": "Pharmacy"
+        },
+        {
+            "name": "Nelliyambathi Health Clinic",
+            "icon": "medical-icon.png",
+            "type": "Hospital"
+        }
+    ],
+    "ratingDistribution": {
+        "5": 65,
+        "4": 22,
+        "3": 8,
+        "2": 3,
+        "1": 2
+    },
+    "reviews": [
+        {
+            "user": "Akhil Raj",
+            "stars": "⭐⭐⭐⭐⭐",
+            "date": "March 5, 2024",
+            "activity": "Trekking",
+            "text": "Amazing trail with breathtaking views! A must-visit for nature lovers.",
+            "images": ["nelliyambathi1.jpg"]
+        },
+        {
+            "user": "Divya M",
+            "stars": "⭐⭐⭐⭐",
+            "date": "Feb 20, 2024",
+            "activity": "Hiking",
+            "text": "The trail was beautiful, but certain sections were challenging.",
+            "images": []
+        },
+        {
+            "user": "Vishnu S",
+            "stars": "⭐⭐⭐⭐⭐",
+            "date": "Jan 15, 2024",
+            "activity": "Camping",
+            "text": "Had an incredible camping experience here! The wildlife and scenery were stunning.",
+            "images": ["nelliyambathi3.jpg"]
+        },
+        {
+            "user": "Sneha P",
+            "stars": "⭐⭐⭐⭐",
+            "date": "Dec 10, 2023",
+            "activity": "Photography",
+            "text": "Great place for capturing nature shots! The misty morning views were surreal.",
+            "images": []
+        }
+    ]
+},
+
+    "Vagamon": {
+        "name": "Vagamon Trail",
+        "rating": "⭐ 4.6",
+        "difficulty": "Moderate",
+        "distance": "10.2 km",
+        "time": "Est. 3h 45m",
+        "images": ["vagamon1.jpg", "vagamon2.jpg", "vagamon3.jpg", "vagamon4.jpg"],
+        "description": "Vagamon offers rolling meadows, pine forests, and mist-covered valleys, making it an excellent trekking destination.",
+        "highlights": [
+            "Breathtaking views of tea plantations.",
+            "Pine forests offering a surreal experience.",
+            "Misty weather and refreshing breezes.",
+            "Paragliding opportunities for adventure seekers."
+        ]
+    },
+    "Agasthyakoodam": {
+        "name": "Agasthyakoodam Trail",
+        "rating": "⭐ 4.9",
+        "difficulty": "Hard",
+        "distance": "18.0 km",
+        "time": "Est. 7h 30m",
+        "images": ["agasthyakoodam1.jpg", "agasthyakoodam2.jpg", "agasthyakoodam3.jpg", "agasthyakoodam4.jpg"],
+        "description": "Agasthyakoodam is one of the highest peaks in Kerala, known for its tough terrain and breathtaking biodiversity.",
+        "highlights": [
+            "Home to rare medicinal plants.",
+            "Challenging trail for experienced trekkers.",
+            "Unmatched panoramic views from the peak.",
+            "Sacred site associated with Sage Agastya."
+        ]
+    },
+    "Sholayar Forest Reserve": {
+        "name": "Sholayar Forest Reserve Trail",
+        "rating": "⭐ 4.4",
+        "difficulty": "Hard",
+        "distance": "15.0 km",
+        "time": "Est. 6h 15m",
+        "images": ["sholayar1.jpg", "sholayar2.jpg", "sholayar3.jpg", "sholayar4.jpg"],
+        "description": "Sholayar Forest Reserve is a pristine wilderness with dense forests and cascading waterfalls.",
+        "highlights": [
+            "Untouched tropical rainforest experience.",
+            "Hidden waterfalls and natural pools.",
+            "Rich biodiversity including elephants and tigers.",
+            "Perfect for wildlife photography."
+        ]
+    },
+    
+    
+        "Kallelimedu": {
+            "name": "Kallelimedu",
+            "rating": "⭐ 4.3",
+            "difficulty": "Moderate",
+            "distance": "12.0 km",
+            "time": "Est. 4h",
+            "images": ["kallelimedu1.jpg", "kallelimedu2.jpg", "kallelimedu3.jpg", "kallelimedu4.jpg"],
+            "description": "Kallelimedu is a hidden gem known for its rolling hills and misty atmosphere, offering trekkers a serene escape.",
+            "highlights": [
+                "Scenic hill views with misty mornings.",
+                "Less crowded trail, perfect for solitude seekers.",
+                "Mild climate with cool breezes.",
+                "Opportunities for camping and birdwatching."
+            ]
+        },
+        "Vythiri": {
+            "name": "Vythiri",
+            "rating": "⭐ 4.5",
+            "difficulty": "Moderate",
+            "distance": "10.0 km",
+            "time": "Est. 3h 30m",
+            "images": ["vythiri1.jpg", "vythiri2.jpg", "vythiri3.jpg", "vythiri4.jpg"],
+            "description": "Vythiri is a lush rainforest trail offering breathtaking views of the Wayanad region and its rich biodiversity.",
+            "highlights": [
+                "Tropical rainforest experience.",
+                "Waterfalls and freshwater streams along the trail.",
+                "Dense canopy providing shade throughout the trek.",
+                "Ideal for nature lovers and wildlife enthusiasts."
+            ]
+        },
+        "Pannipara Hill Top": {
+            "name": "Pannipara Hill Top",
+            "rating": "⭐ 4.2",
+            "difficulty": "Hard",
+            "distance": "12.0 km",
+            "time": "Est. 5h",
+            "images": ["pannipara1.jpg", "pannipara2.jpg", "pannipara3.jpg", "pannipara4.jpg"],
+            "description": "Pannipara Hill Top is a challenging trek that rewards adventurers with mesmerizing sunrise and sunset views.",
+            "highlights": [
+                "Breathtaking panoramic views from the hilltop.",
+                "Challenging terrain with steep inclines.",
+                "Best for experienced trekkers and adventure seekers.",
+                "Ideal for camping under the stars."
+            ]
+        },
+        "Ramangara": {
+            "name": "Ramangara",
+            "rating": "⭐ 4.5",
+            "difficulty": "Moderate",
+            "distance": "8.5 km",
+            "time": "Est. 3h",
+            "images": ["ramangara1.jpg", "ramangara2.jpg", "ramangara3.jpg", "ramangara4.jpg"],
+            "description": "Ramangara is famous for its rocky landscapes and is a great location for rock climbers and trekkers alike.",
+            "highlights": [
+                "Unique rocky terrain with stunning landscapes.",
+                "Perfect for rock climbing and rappelling.",
+                "Spectacular views of the surroundings.",
+                "Moderate difficulty, suitable for most trekkers."
+            ]
+        },
+        "Illithod Forest Trail": {
+            "name": "Illithod Forest Trail",
+            "rating": "⭐ 4.3",
+            "difficulty": "Moderate",
+            "distance": "9.5 km",
+            "time": "Est. 3h 15m",
+            "images": ["illithod1.jpg", "illithod2.jpg", "illithod3.jpg", "illithod4.jpg"],
+            "description": "Illithod Forest Trail is a dense forest trek filled with diverse flora, fauna, and an enchanting natural environment.",
+            "highlights": [
+                "Thick forests with cool, shaded trails.",
+                "Mildly challenging, suitable for beginners.",
+                "Frequent sightings of birds and small wildlife.",
+                "A peaceful and refreshing trekking experience."
+            ]
+        },
+        "Sabarimala Forest Trail": {
+            "name": "Sabarimala Forest Trail",
+            "rating": "⭐ 4.8",
+            "difficulty": "Hard",
+            "distance": "16.0 km",
+            "time": "Est. 6h",
+            "images": ["sabarimala1.jpg", "sabarimala2.jpg", "sabarimala3.jpg", "sabarimala4.jpg"],
+            "description": "A spiritual and adventurous trek through the dense Sabarimala forests, leading to a serene and sacred destination.",
+            "highlights": [
+                "Sacred route with religious significance.",
+                "Deep forests with ancient trees.",
+                "Challenging terrain requiring endurance.",
+                "A blend of spirituality and adventure."
+            ]
+        },
+        "Anamudi": {
+            "name": "Anamudi",
+            "rating": "⭐ 4.9",
+            "difficulty": "Hard",
+            "distance": "13.5 km",
+            "time": "Est. 5h 30m",
+            "images": ["anamudi1.jpg", "anamudi2.jpg", "anamudi3.jpg", "anamudi4.jpg"],
+            "description": "Anamudi, the highest peak in South India, offers a thrilling trekking experience with unparalleled views.",
+            "highlights": [
+                "Highest peak in South India.",
+                "Challenging but rewarding climb.",
+                "Breathtaking views of the Western Ghats.",
+                "Rich biodiversity with unique flora and fauna."
+            ]
+        },
+        "Brahmagiri Hills": {
+            "name": "Brahmagiri Hills",
+            "rating": "⭐ 4.4",
+            "difficulty": "Moderate",
+            "distance": "10.5 km",
+            "time": "Est. 4h",
+            "images": ["brahmagiri1.jpg", "brahmagiri2.jpg", "brahmagiri3.jpg", "brahmagiri4.jpg"],
+            "description": "Brahmagiri Hills offers a scenic trekking experience with lush green meadows and beautiful landscapes.",
+            "highlights": [
+                "Green rolling hills with scenic beauty.",
+                "Moderate trek with breathtaking views.",
+                "Ideal for beginner to intermediate trekkers.",
+                "Rich cultural significance and historical spots."
+            ]
+        },
+        "Kookal Trail": {
+            "name": "Kookal Trail",
+            "rating": "⭐ 4.2",
+            "difficulty": "Moderate",
+            "distance": "8.0 km",
+            "time": "Est. 3h",
+            "images": ["kookal1.jpg", "kookal2.jpg", "kookal3.jpg", "kookal4.jpg"],
+            "description": "Kookal Trail is a mesmerizing journey through lush green valleys and misty surroundings.",
+            "highlights": [
+                "Charming landscapes and rich vegetation.",
+                "Mild difficulty, perfect for beginners.",
+                "Ideal spot for sunrise and sunset views.",
+                "A peaceful and refreshing trekking experience."
+            ]
+        },
+        "Mullanthandu": {
+            "name": "Mullanthandu",
+            "rating": "⭐ 4.5",
+            "difficulty": "Moderate",
+            "distance": "9.0 km",
+            "time": "Est. 3h 30m",
+            "images": ["mullanthandu1.jpg", "mullanthandu2.jpg", "mullanthandu3.jpg", "mullanthandu4.jpg"],
+            "description": "Mullanthandu is an unexplored trekking route with breathtaking natural beauty and unique rock formations.",
+            "highlights": [
+                "Scenic rocky landscapes with diverse vegetation.",
+                "Suitable for all fitness levels.",
+                "Less crowded, offering solitude.",
+                "Ideal for photography and relaxation."
+            ]
+        },
+        
+            "Misty Valley": {
+                "name": "Misty Valley",
+                "rating": "⭐ 4.6",
+                "difficulty": "Moderate",
+                "distance": "11.2 km",
+                "time": "Est. 4h",
+                "images": ["mistyvalley1.jpg", "mistyvalley2.jpg", "mistyvalley3.jpg", "mistyvalley4.jpg"],
+                "description": "Misty Valley offers a dreamy landscape with rolling green meadows covered in mist, providing a magical trekking experience.",
+                "highlights": [
+                    "Breathtaking mist-covered valleys.",
+                    "Easy-to-moderate trail with beautiful scenery.",
+                    "Ideal for nature walks and camping.",
+                    "Peaceful, less-crowded trekking experience."
+                ]
+            },
+            "Ponmudi Trail": {
+                "name": "Ponmudi Trail",
+                "rating": "⭐ 4.3",
+                "difficulty": "Moderate",
+                "distance": "9.8 km",
+                "time": "Est. 3h 30m",
+                "images": ["ponmudi1.jpg", "ponmudi2.jpg", "ponmudi3.jpg", "ponmudi4.jpg"],
+                "description": "Ponmudi Trail is a scenic trekking route with picturesque tea estates and mesmerizing hilltop views.",
+                "highlights": [
+                    "Golden grass-covered hilltops.",
+                    "Beautiful tea plantations along the route.",
+                    "Mild climate with refreshing breezes.",
+                    "Perfect for a relaxed hiking experience."
+                ]
+            },
+            "Meesapulimala": {
+                "name": "Meesapulimala",
+                "rating": "⭐ 4.8",
+                "difficulty": "Hard",
+                "distance": "15.0 km",
+                "time": "Est. 6h",
+                "images": ["meesapulimala1.jpg", "meesapulimala2.jpg", "meesapulimala3.jpg", "meesapulimala4.jpg"],
+                "description": "Meesapulimala is the second-highest peak in Kerala, offering an adventurous trek through grasslands, forests, and hilltops.",
+                "highlights": [
+                    "Unparalleled sunrise and sunset views.",
+                    "Challenging yet thrilling trekking experience.",
+                    "Spectacular mountain scenery.",
+                    "Rich biodiversity and serene environment."
+                ]
+            },
+            "Thusharagiri Waterfalls": {
+                "name": "Thusharagiri Waterfalls",
+                "rating": "⭐ 4.4",
+                "difficulty": "Moderate",
+                "distance": "7.5 km",
+                "time": "Est. 3h",
+                "images": ["thusharagiri1.jpg", "thusharagiri2.jpg", "thusharagiri3.jpg", "thusharagiri4.jpg"],
+                "description": "Thusharagiri Waterfalls offers a scenic trail leading to a mesmerizing waterfall surrounded by lush greenery.",
+                "highlights": [
+                    "Enchanting waterfall amidst dense forests.",
+                    "Refreshing and easy-to-moderate trek.",
+                    "Perfect for nature lovers and photographers.",
+                    "Opportunities for swimming in natural pools."
+                ]
+            },
+            "Periyar Wildlife Trek": {
+                "name": "Periyar Wildlife Trek",
+                "rating": "⭐ 4.7",
+                "difficulty": "Moderate",
+                "distance": "14.0 km",
+                "time": "Est. 5h",
+                "images": ["periyar1.jpg", "periyar2.jpg", "periyar3.jpg", "periyar4.jpg"],
+                "description": "Periyar Wildlife Trek is an exciting jungle trail offering sightings of elephants, tigers, and rich flora.",
+                "highlights": [
+                    "Thrilling forest walk with abundant wildlife.",
+                    "Chance to see elephants, deer, and birds.",
+                    "Guided trekking experience with park rangers.",
+                    "Diverse ecosystem with breathtaking scenery."
+                ]
+            },
+            "Gavi Forest Trail": {
+                "name": "Gavi Forest Trail",
+                "rating": "⭐ 4.5",
+                "difficulty": "Moderate",
+                "distance": "13.0 km",
+                "time": "Est. 4h 30m",
+                "images": ["gavi1.jpg", "gavi2.jpg", "gavi3.jpg", "gavi4.jpg"],
+                "description": "Gavi Forest Trail is a pristine trekking route through dense evergreen forests, offering a true escape into nature.",
+                "highlights": [
+                    "Serene and untouched forest landscapes.",
+                    "Opportunities for wildlife sightings.",
+                    "Crystal-clear lakes and waterfalls.",
+                    "Perfect for camping and eco-tourism."
+                ]
+            },
+            "Chokramudi Peak": {
+                "name": "Chokramudi Peak",
+                "rating": "⭐ 4.6",
+                "difficulty": "Hard",
+                "distance": "10.5 km",
+                "time": "Est. 4h 30m",
+                "images": ["chokramudi1.jpg", "chokramudi2.jpg", "chokramudi3.jpg", "chokramudi4.jpg"],
+                "description": "Chokramudi Peak is a challenging trek that rewards adventurers with stunning 360-degree views of Munnar’s valleys and hills.",
+                "highlights": [
+                    "Panoramic mountain views from the peak.",
+                    "Thrilling steep ascents and rocky paths.",
+                    "Perfect for adventure seekers.",
+                    "Spectacular sunrise and sunset experience."
+                ]
+            }
+        }
+        
+    
+    
+

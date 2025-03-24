@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vattavada Trail Details</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #00000b06;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        /* Black top border with back button */
+        .top-bar {
+            width: 100%;
+            height: 40px;
+            background-color: rgb(247, 244, 244);
+            display: flex;
+            align-items: center;
+            padding-left: 15px;
+        }
+        .back-button {
+            color: rgb(13, 5, 5);
+            font-size: 16px;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: 0.3s;
+        }
+        .back-button:hover {
+            background-color: #333;
+        }
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 40px;
+            background: white;
+            text-align: left;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+        .header-section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding-left: 40px;
+        }
+        .trail-title {
+            font-size: 42px;
+            font-weight: bold;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        .trail-subtitle {
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+        .content-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .trail-left {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 15px;
+            padding-left: 40px;
+        }
+        .trail-images {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+        .trail-images img {
+            width: 320px;
+            height: 219px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .trail-images img:hover {
+            transform: scale(1.05);
+        }
+        .trail-right {
+            flex: 1;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+            font-family: 'Merriweather', serif;
+        }
+        .trail-right h3 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .trail-right p, .trail-right ul {
+            font-size: 20px;
+            color: #333;
+            line-height: 1.6;
+        }
+        .trail-right ul {
+            padding-left: 25px;
+        }
+        /* Facilities Section */
+     /* Facilities Section */
+.facilities-section {
+    width: 90%;
+    margin: 40px auto;
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Container for Weather | Distance | Facilities */
+.facilities-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Ensure all sections have equal height */
+    gap: 21px;
+}
+
+/* Common Styling for Weather, Distance & Facilities */
+.weather-section, .distance-section, .facilities-content {
+    flex: 1; /* Ensures equal width */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url('blue.webp') no-repeat center center/cover;
+    background-size: cover;
+    color: white; /* Ensures readability */
+}
+
+/* Facilities Title */
+.facilities-title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Facilities List Styling */
+.facilities-list {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    align-items: center;
+}
+
+/* Facility Item */
+.facility-item {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(22, 6, 6); /* White text for better contrast */
+    background: rgba(246, 243, 243, 0.986); /* Dark overlay for readability */
+    padding: 12px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    justify-content: center;
+}
+
+/* Fixing Oversized Icons */
+.facility-item img {
+    width: 28px;
+    height: 28px;
+}
+
+/* Distance Grid Layout */
+.distance-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    font-size: 20px;
+}
+
+/* Distance, Elevation, and Time Values */
+.distance-grid strong {
+    font-size: 24px; /* Slightly increased size for better visibility */
+    font-weight: bold;
+}
+
+/* Description Text */
+.distance-grid p {
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+/* Additional Styling for Better Spacing */
+.distance-section h3,
+.weather-section h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 32px;
+    letter-spacing: 1px;
+}
+/* Reviews Container */
+.reviews-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding: 30px;
+    font-family: 'Poppins', sans-serif;
+    background: #f8f8f8;
+    border-radius: 12px;
+}
+
+/* Left Side: General Rating */
+.review-summary {
+    flex: 1;
+    max-width: 320px;
+    text-align: center;
+    padding: 25px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-heading {
+    font-size: 22px;
+    font-weight: bold;
+    color: #1a3e1a;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.rating-number {
+    font-size: 52px;
+    font-weight: bold;
+    color: #1a3e1a;
+}
+
+.rating-star {
+    font-size: 26px;
+    color: #27ae60;
+}
+
+.rating-info p {
+    font-size: 15px;
+    color: gray;
+    margin: 5px 0;
+}
+
+/* Improved Rating Bar Styling */
+.rating-bars {
+    margin-top: 15px;
+}
+
+.rating-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    margin: 6px 0;
+}
+
+.progress-bar {
+    width: 130px;
+    height: 10px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress-bar div {
+    height: 100%;
+    background: #27ae60;
+}
+
+/* Review Button */
+.review-btn {
+    background: #1a3e1a;
+    color: white;
+    border: none;
+    padding: 14px;
+    width: 100%;
+    margin-top: 20px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.review-btn:hover {
+    background: #145a14;
+}
+
+.extra-options {
+    font-size: 14px;
+    margin-top: 12px;
+}
+
+.extra-options a {
+    text-decoration: none;
+    color: #1a3e1a;
+    font-weight: 500;
+}
+
+/* Right Side: User Reviews */
+.user-reviews {
+    flex: 2;
+    padding-left: 30px;
+}
+
+/* Individual Review Card */
+.review {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    background: #ffffff;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.review:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.review-content {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.review-content h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #1a3e1a;
+    font-weight: bold;
+}
+
+.stars {
+    color: #27ae60;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.review-date {
+    font-size: 14px;
+    color: gray;
+}
+
+.review-text {
+    font-size: 16px;
+    color: #333;
+    margin-top: 8px;
+}
+
+/* "+More" Button Styling */
+/* "+More" Button Styling */
+.more-button {
+    background: #1a3e1a;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+.more-button:hover {
+    background: #145a14;
+}
+
+/* Container for the buttons under reviews */
+.review-buttons {
+    display: flex;
+    justify-content: center; /* Center the buttons */
+    gap: 15px; /* Space between the two buttons */
+    width: 100%;
+    margin-top: 20px; /* Adds space below "+4 More" button */
+}
+
+/* Common button styling */
+.direction-btn, .see-trail-btn {
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Get Directions - Blue Button */
+.direction-btn {
+    background: linear-gradient(135deg, #007BFF, #0056b3);
+    color: white;
+}
+
+.direction-btn:hover {
+    background: linear-gradient(135deg, #0056b3, #004094);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 91, 187, 0.4);
+}
+
+/* See Trail - Green Button */
+.see-trail-btn {
+    background: linear-gradient(135deg, #28a745, #1e7e34);
+    color: white;
+}
+
+.see-trail-btn:hover {
+    background: linear-gradient(135deg, #1e7e34, #16632b);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(40, 167, 69, 0.4);
+}
+
+
+
+
+        
+
+</style>
+</head>
+<body>
+    <!-- Top bar with back button inside -->
+    <div class="top-bar">
+        <a href="index.html" class="back-button">⬅ Back</a>
+    </div>
+
+    <div class="container">
+        <div class="header-section">
+            <h1 class="trail-title">Vattavada Trail</h1>
+            <p class="trail-subtitle">⭐ 4.6 • Moderate • 12.5 km • Est. 4h 10m</p>
+        </div>
+        <div class="content-section">
+            <div class="trail-left">
+                <div class="trail-images">
+                    <img src="vatta 1.jpg" alt="Vattavada Trail 1">
+                    <img src="vatta 2.jpg" alt="Vattavada Trail 2">
+                    <img src="vatta 3.jpg" alt="Vattavada Trail 3">
+                    <img src="vatta 4.jpg" alt="Vattavada Trail 4">
+                </div>
+            </div>
+            <div class="trail-right">
+                <h3>Trail Description</h3>
+                <p>Vattavada, located near Munnar, is a paradise for trekkers. Known for its terraced farms and breathtaking views, this trail takes you through lush greenery, hilltop villages, and diverse flora and fauna.</p>
+                <h3>Trail Highlights</h3>
+                <ul>
+                    <li>Panoramic views of Munnar’s valleys and tea estates.</li>
+                    <li>Opportunities to see rare birds and wildlife.</li>
+                    <li>Local farm produce like strawberries and plums.</li>
+                    <li>Cool climate with refreshing breezes.</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Facilities & Weather Section (Same Row) -->
+        <div class="facilities-section">
+            <div class="facilities-container">
+                <div class="weather-section">
+                    <h3 class="weather-title">Weather Update</h3>
+                    <div id="weather-info" class="weather-info">Fetching weather...</div>
+                </div>
+
+                <div class="distance-section">
+                    <h3>Distance & Travel Time</h3>
+                    <div class="distance-grid">
+                        <div>
+                            <strong id="distance">--</strong> km
+                            <p>Distance</p>
+                        </div>
+                        <div>
+                            <strong id="elevation">69</strong> m
+                            <p>Elevation Gain</p>
+                        </div>
+                        <div>
+                            <strong id="travel-time">--</strong>
+                            <p>Estimated Time</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="facilities-content">
+                    <h3 class="facilities-title">Facilities</h3>
+                    <div class="facilities-list">
+                        <div class="facility-item"><img src="hotel-icon.png" alt="Accommodation"> Sandalwood Forest Homestay</div>
+                        <div class="facility-item"><img src="restaurant-icon.jpg" alt="Restaurant"> Farm Fresh Restaurant</div>
+                        <div class="facility-item"><img src="info-icon.png" alt="Info Center"> Trail Entrance Info</div>
+                        <div class="facility-item"><img src="pharmacy-icon.jpg" alt="Pharmacy"> 24/7 Pharmacy</div>
+                        <div class="facility-item"><img src="medical-icon.png" alt="Hospital"> Vattavada Health Center</div>
+                    </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let selectedTrail = JSON.parse(localStorage.getItem("selectedTrail"));
+
+        // If no selected trail, use Vattavada coordinates (10.2014, 77.1665)
+        if (!selectedTrail || !selectedTrail.coordinates) {
+            selectedTrail = {
+                name: "Vattavada Trail",
+                coordinates: [77.1665, 10.2014] // [Longitude, Latitude]
+            };
+        }
+
+        function fetchWeather() {
+            const apiKey = "2bcf0ad3f496ce988fb9ccb0014e5c27";
+            const lat = selectedTrail.coordinates[1]; // Latitude
+            const lon = selectedTrail.coordinates[0]; // Longitude
+            const weatherApiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
+
+            fetch(weatherApiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById("weather-info").innerHTML = `
+                        <h3 style="color: #d9534f;">${new Date().toLocaleString()}</h3>
+                        <h2 style="font-size: 22px; font-weight: bold;">${selectedTrail.name}</h2>
+                        <p style="font-size: 30px; font-weight: bold;">${data.main.temp}°C</p>
+                        <p style="font-style: italic;">Feels like ${data.main.feels_like}°C. ${data.weather[0].description}</p>
+                        <p>🌧️ ${data.rain ? data.rain["1h"] + "mm Rain" : "No Rain"}</p>
+                        <p>💨 ${data.wind.speed} m/s, ${data.wind.deg}°</p>
+                        <p>🌡️ ${data.main.pressure} hPa | Humidity: ${data.main.humidity}%</p>
+                        <p>🌅 Sunrise: ${new Date(data.sys.sunrise * 1000).toLocaleTimeString()}</p>
+                        <p>🌇 Sunset: ${new Date(data.sys.sunset * 1000).toLocaleTimeString()}</p>
+                    `;
+                })
+                .catch(error => {
+                    console.error("Error fetching weather data:", error);
+                    document.getElementById("weather-info").innerHTML = "<p>Unable to fetch weather data</p>";
+                });
+        }
+
+        fetchWeather();
+    });
+</script>
+
+
+<script>
+    // Vattavada Trail Coordinates
+    const trailLat = 10.1846;
+    const trailLon = 77.1870;
+
+    function fetchDistanceAndTime() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(position => {
+                const userLat = position.coords.latitude;
+                const userLon = position.coords.longitude;
+
+                const mapboxApiKey = "pk.eyJ1Ijoic2hhaHVscHMiLCJhIjoiY200aXFxYWF2MDVvczJqczl0OGIzeWxzZiJ9.Lb88xOzFwHh1zZ8f6o5nhA";
+                const directionsUrl = `https://api.mapbox.com/directions/v5/mapbox/driving/${userLon},${userLat};${trailLon},${trailLat}?access_token=${mapboxApiKey}&geometries=geojson`;
+
+                fetch(directionsUrl)
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.routes.length > 0) {
+                            const route = data.routes[0];
+                            const distanceKm = (route.distance / 1000).toFixed(1);
+                            const durationMin = Math.round(route.duration / 60);
+                            const hours = Math.floor(durationMin / 60); 
+                            const minutes = durationMin % 60;
+
+                            document.getElementById("distance").textContent = distanceKm;
+                            document.getElementById("travel-time").textContent = 
+                                hours > 0 ? `${hours} hr ${minutes} min` : `${minutes} min`;
+                        } else {
+                            document.getElementById("distance").textContent = "N/A";
+                            document.getElementById("travel-time").textContent = "N/A";
+                        }
+                    })
+                    .catch(error => console.error("Error fetching directions:", error));
+            }, error => console.error("Error getting location:", error));
+        } else {
+            console.error("Geolocation is not supported by this browser.");
+        }
+    }
+
+    fetchDistanceAndTime();
+</script>
+
+<div class="reviews-container">
+    <!-- Left Side: General Rating -->
+    <div class="review-summary">
+        <h2 class="section-heading">General Rating</h2>
+        <h1 class="rating-number">4.9</h1>
+        <span class="rating-star">⭐</span>
+        <div class="rating-info">
+            <p class="review-count">6 reviews</p>
+            <p class="activity-count">7 activities</p>
+        </div>
+
+        <!-- Rating Distribution -->
+        <div class="rating-bars">
+            <div class="rating-row">
+                <span>⭐ 5</span>
+                <div class="progress-bar"><div style="width: 80%;"></div></div>
+            </div>
+            <div class="rating-row">
+                <span>⭐ 4</span>
+                <div class="progress-bar"><div style="width: 15%;"></div></div>
+            </div>
+            <div class="rating-row">
+                <span>⭐ 3</span>
+                <div class="progress-bar"><div style="width: 3%;"></div></div>
+            </div>
+            <div class="rating-row">
+                <span>⭐ 2</span>
+                <div class="progress-bar"><div style="width: 1%;"></div></div>
+            </div>
+            <div class="rating-row">
+                <span>⭐ 1</span>
+                <div class="progress-bar"><div style="width: 1%;"></div></div>
+            </div>
+        </div>
+
+        <button class="review-btn" onclick="openReviewForm()">Review Trail</button>
+        <div class="extra-options">
+            <a href="#">Mark as completed</a> • <a href="#">Suggest edit</a>
+        </div>
+    </div>
+
+ <!-- Right Side: User Reviews -->
+<div class="user-reviews">
+    <div class="review">
+        <div class="review-content">
+            <h4>Gary A <span class="stars">⭐⭐⭐⭐⭐</span></h4>
+            <p class="review-date">Oct 13, 2022 • Hiking</p>
+            <p class="review-text">
+                It is an out and back hike, not a loop. Amazing view of the waterfall from above and below. 
+                This is a moderate hike with significant vertical on cobblestones.
+            </p>
+            <p><strong>Conditions:</strong> Fee, Great!</p>
+        </div>
+    </div>
+
+    <div class="review">
+        <div class="review-content">
+            <h4>Hema Sha <span class="stars">⭐⭐⭐⭐⭐</span></h4>
+            <p class="review-date">Apr 18, 2022 • Hiking</p>
+            <p class="review-text">Well-paved trail. Amazing views of the falls.</p>
+        </div>
+    </div>
+
+    <!-- Hidden Reviews (Initially Hidden) -->
+    <div id="more-reviews" style="display: none;">
+        <div class="review">
+            <div class="review-content">
+                <h4>Arun Kumar <span class="stars">⭐⭐⭐⭐⭐</span></h4>
+                <p class="review-date">Feb 10, 2023 • Trekking</p>
+                <p class="review-text">
+                    Breathtaking experience! The trail is well-maintained and the view at the top is stunning.
+                </p>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="review-content">
+                <h4>Neha Verma <span class="stars">⭐⭐⭐⭐</span></h4>
+                <p class="review-date">Dec 27, 2023 • Adventure</p>
+                <p class="review-text">
+                    Slightly difficult but totally worth it! Loved the cool weather and the peaceful surroundings.
+                </p>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="review-content">
+                <h4>Vikram R <span class="stars">⭐⭐⭐⭐⭐</span></h4>
+                <p class="review-date">Nov 5, 2023 • Solo Trip</p>
+                <p class="review-text">
+                    A must-visit for nature lovers. The tea plantations along the way make it even more beautiful.
+                </p>
+            </div>
+        </div>
+
+        <div class="review">
+            <div class="review-content">
+                <h4>Sneha Patel <span class="stars">⭐⭐⭐⭐⭐</span></h4>
+                <p class="review-date">Oct 15, 2023 • Group Trek</p>
+                <p class="review-text">
+                    The best trek in Kerala! Fresh mountain air and breathtaking sunrise views.
+                </p>
+            </div>
+        </div>
+
+        <!-- Newly Submitted Reviews Appear Here After Clicking "+4 More" -->
+        <div id="review-list" style="display: none;">
+            <!-- New reviews from localStorage will be inserted here -->
+        </div>
+    </div>
+
+   <!-- "+4 More" Button -->
+<button id="show-more-reviews" class="more-button">+4 More</button>
+
+<!-- Buttons Moved Below "+4 More" -->
+<div class="review-buttons">
+    <button class="direction-btn" onclick="window.location.href='get-directions.html';">
+        🚗 Get Directions
+    </button>
+    <button class="see-trail-btn" onclick="seeTrail()">
+        🌿 See Trail
+    </button>
+</div>
+
+<!-- JavaScript to Show More Reviews -->
+<script>
+    document.getElementById("show-more-reviews").addEventListener("click", function() {
+        document.getElementById("more-reviews").style.display = "block";
+        document.getElementById("review-list").style.display = "block"; // Show new reviews
+        this.style.display = "none"; // Hide "+4 More" button after expanding
+    });
+
+    function openReviewForm() {
+        window.location.href = "submit-review.html"; // Replace with actual review submission page
+    }
+</script>
+
+
+<script>
+function loadReviews() {
+    let storedReviews = JSON.parse(localStorage.getItem("reviews")) || [];
+    let reviewsContainer = document.getElementById("review-list");
+
+    if (!reviewsContainer) {
+        console.error("Review section not found.");
+        return;
+    }
+
+    if (storedReviews.length === 0) {
+        reviewsContainer.style.display = "none"; // Keep hidden if no reviews exist
+        return;
+    }
+
+    reviewsContainer.innerHTML = ""; // Clear existing content
+    reviewsContainer.style.display = "block"; // Show only if there are reviews
+
+    storedReviews.forEach((review, index) => {
+        let reviewHTML = `
+            <div class="review">
+                <div class="review-content">
+                    <h4>Anonymous <span class="stars">${review.stars || '⭐⭐⭐⭐'}</span></h4>
+                    <p class="review-date">${review.date || new Date().toLocaleDateString()} • User Review</p>
+                    <p class="review-text">${review.text}</p>
+                    ${review.images.length > 0 ? review.images.map(img => `<img src="${img}" style="width:100px; height:100px; border-radius:5px; margin:5px;">`).join("") : ""}
+                </div>
+            </div>
+            <hr>
+        `;
+        reviewsContainer.innerHTML += reviewHTML;
+    });
+}
+
+// Load reviews when the page loads
+window.onload = loadReviews;
+
+
+</script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Data</title>
+    </head>
+    <body>
+        <h2>Check Local Storage</h2>
+        <button onclick="showReviews()">Show Reviews</button>
+    </body>
+</html>
+
+<script>
+    function showReviews() {
+        let reviews = localStorage.getItem("reviews");
+        if (reviews) {
+            console.log("Stored Reviews:", JSON.parse(reviews)); // Parse & Log Data
+        } else {
+            console.log("No reviews found in Local Storage.");
+        }
+    }
+</script>
