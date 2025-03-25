@@ -170,311 +170,1554 @@
     ]
 },
 
-    "Vagamon": {
-        "name": "Vagamon Trail",
-        "rating": "⭐ 4.6",
-        "difficulty": "Moderate",
-        "distance": "10.2 km",
-        "time": "Est. 3h 45m",
-        "images": ["vagamon1.jpg", "vagamon2.jpg", "vagamon3.jpg", "vagamon4.jpg"],
-        "description": "Vagamon offers rolling meadows, pine forests, and mist-covered valleys, making it an excellent trekking destination.",
-        "highlights": [
-            "Breathtaking views of tea plantations.",
-            "Pine forests offering a surreal experience.",
-            "Misty weather and refreshing breezes.",
-            "Paragliding opportunities for adventure seekers."
-        ]
-    },
-    "Agasthyakoodam": {
-        "name": "Agasthyakoodam Trail",
-        "rating": "⭐ 4.9",
-        "difficulty": "Hard",
-        "distance": "18.0 km",
-        "time": "Est. 7h 30m",
-        "images": ["agasthyakoodam1.jpg", "agasthyakoodam2.jpg", "agasthyakoodam3.jpg", "agasthyakoodam4.jpg"],
-        "description": "Agasthyakoodam is one of the highest peaks in Kerala, known for its tough terrain and breathtaking biodiversity.",
-        "highlights": [
-            "Home to rare medicinal plants.",
-            "Challenging trail for experienced trekkers.",
-            "Unmatched panoramic views from the peak.",
-            "Sacred site associated with Sage Agastya."
-        ]
-    },
-    "Sholayar Forest Reserve": {
-        "name": "Sholayar Forest Reserve Trail",
-        "rating": "⭐ 4.4",
-        "difficulty": "Hard",
-        "distance": "15.0 km",
-        "time": "Est. 6h 15m",
-        "images": ["sholayar1.jpg", "sholayar2.jpg", "sholayar3.jpg", "sholayar4.jpg"],
-        "description": "Sholayar Forest Reserve is a pristine wilderness with dense forests and cascading waterfalls.",
-        "highlights": [
-            "Untouched tropical rainforest experience.",
-            "Hidden waterfalls and natural pools.",
-            "Rich biodiversity including elephants and tigers.",
-            "Perfect for wildlife photography."
-        ]
-    },
-    
-    
-        "Kallelimedu": {
-            "name": "Kallelimedu",
-            "rating": "⭐ 4.3",
-            "difficulty": "Moderate",
-            "distance": "12.0 km",
-            "time": "Est. 4h",
-            "images": ["kallelimedu1.jpg", "kallelimedu2.jpg", "kallelimedu3.jpg", "kallelimedu4.jpg"],
-            "description": "Kallelimedu is a hidden gem known for its rolling hills and misty atmosphere, offering trekkers a serene escape.",
-            "highlights": [
-                "Scenic hill views with misty mornings.",
-                "Less crowded trail, perfect for solitude seekers.",
-                "Mild climate with cool breezes.",
-                "Opportunities for camping and birdwatching."
-            ]
+   "Vagamon": {
+    "name": "Vagamon Trail",
+    "rating": "⭐ 4.6",
+    "difficulty": "Moderate",
+    "distance": "10.2 km",
+    "time": "Est. 3h 45m",
+    "coordinates": [76.9056, 9.6851],
+    "images": ["vagamon1.jpg", "vagamon2.jpg", "vagamon3.jpg", "vagamon4.jpg"],
+    "description": "Vagamon, a serene hill station in Kerala, is known for its rolling meadows, misty valleys, and pine forests. This trail offers a mix of adventure and tranquility, making it perfect for trekkers and nature lovers.",
+    "highlights": [
+        "Breathtaking views of tea plantations.",
+        "Pine forests offering a surreal experience.",
+        "Misty weather and refreshing breezes.",
+        "Paragliding opportunities for adventure seekers."
+    ],
+    "facilities": [
+        {
+            "name": "Hill View Homestay",
+            "icon": "hotel-icon.png",
+            "type": "Accommodation"
         },
-        "Vythiri": {
-            "name": "Vythiri",
-            "rating": "⭐ 4.5",
-            "difficulty": "Moderate",
-            "distance": "10.0 km",
-            "time": "Est. 3h 30m",
-            "images": ["vythiri1.jpg", "vythiri2.jpg", "vythiri3.jpg", "vythiri4.jpg"],
-            "description": "Vythiri is a lush rainforest trail offering breathtaking views of the Wayanad region and its rich biodiversity.",
-            "highlights": [
-                "Tropical rainforest experience.",
-                "Waterfalls and freshwater streams along the trail.",
-                "Dense canopy providing shade throughout the trek.",
-                "Ideal for nature lovers and wildlife enthusiasts."
-            ]
+        {
+            "name": "Misty Meadows Restaurant",
+            "icon": "restaurant-icon.jpg",
+            "type": "Restaurant"
         },
-        "Pannipara Hill Top": {
-            "name": "Pannipara Hill Top",
-            "rating": "⭐ 4.2",
-            "difficulty": "Hard",
-            "distance": "12.0 km",
-            "time": "Est. 5h",
-            "images": ["pannipara1.jpg", "pannipara2.jpg", "pannipara3.jpg", "pannipara4.jpg"],
-            "description": "Pannipara Hill Top is a challenging trek that rewards adventurers with mesmerizing sunrise and sunset views.",
-            "highlights": [
-                "Breathtaking panoramic views from the hilltop.",
-                "Challenging terrain with steep inclines.",
-                "Best for experienced trekkers and adventure seekers.",
-                "Ideal for camping under the stars."
-            ]
+        {
+            "name": "Vagamon Info Center",
+            "icon": "info-icon.png",
+            "type": "Info Center"
         },
-        "Ramangara": {
-            "name": "Ramangara",
-            "rating": "⭐ 4.5",
-            "difficulty": "Moderate",
-            "distance": "8.5 km",
-            "time": "Est. 3h",
-            "images": ["ramangara1.jpg", "ramangara2.jpg", "ramangara3.jpg", "ramangara4.jpg"],
-            "description": "Ramangara is famous for its rocky landscapes and is a great location for rock climbers and trekkers alike.",
-            "highlights": [
-                "Unique rocky terrain with stunning landscapes.",
-                "Perfect for rock climbing and rappelling.",
-                "Spectacular views of the surroundings.",
-                "Moderate difficulty, suitable for most trekkers."
-            ]
+        {
+            "name": "Vagamon Medical Store",
+            "icon": "pharmacy-icon.jpg",
+            "type": "Pharmacy"
         },
-        "Illithod Forest Trail": {
-            "name": "Illithod Forest Trail",
-            "rating": "⭐ 4.3",
-            "difficulty": "Moderate",
-            "distance": "9.5 km",
-            "time": "Est. 3h 15m",
-            "images": ["illithod1.jpg", "illithod2.jpg", "illithod3.jpg", "illithod4.jpg"],
-            "description": "Illithod Forest Trail is a dense forest trek filled with diverse flora, fauna, and an enchanting natural environment.",
-            "highlights": [
-                "Thick forests with cool, shaded trails.",
-                "Mildly challenging, suitable for beginners.",
-                "Frequent sightings of birds and small wildlife.",
-                "A peaceful and refreshing trekking experience."
-            ]
-        },
-        "Sabarimala Forest Trail": {
-            "name": "Sabarimala Forest Trail",
-            "rating": "⭐ 4.8",
-            "difficulty": "Hard",
-            "distance": "16.0 km",
-            "time": "Est. 6h",
-            "images": ["sabarimala1.jpg", "sabarimala2.jpg", "sabarimala3.jpg", "sabarimala4.jpg"],
-            "description": "A spiritual and adventurous trek through the dense Sabarimala forests, leading to a serene and sacred destination.",
-            "highlights": [
-                "Sacred route with religious significance.",
-                "Deep forests with ancient trees.",
-                "Challenging terrain requiring endurance.",
-                "A blend of spirituality and adventure."
-            ]
-        },
-        "Anamudi": {
-            "name": "Anamudi",
-            "rating": "⭐ 4.9",
-            "difficulty": "Hard",
-            "distance": "13.5 km",
-            "time": "Est. 5h 30m",
-            "images": ["anamudi1.jpg", "anamudi2.jpg", "anamudi3.jpg", "anamudi4.jpg"],
-            "description": "Anamudi, the highest peak in South India, offers a thrilling trekking experience with unparalleled views.",
-            "highlights": [
-                "Highest peak in South India.",
-                "Challenging but rewarding climb.",
-                "Breathtaking views of the Western Ghats.",
-                "Rich biodiversity with unique flora and fauna."
-            ]
-        },
-        "Brahmagiri Hills": {
-            "name": "Brahmagiri Hills",
-            "rating": "⭐ 4.4",
-            "difficulty": "Moderate",
-            "distance": "10.5 km",
-            "time": "Est. 4h",
-            "images": ["brahmagiri1.jpg", "brahmagiri2.jpg", "brahmagiri3.jpg", "brahmagiri4.jpg"],
-            "description": "Brahmagiri Hills offers a scenic trekking experience with lush green meadows and beautiful landscapes.",
-            "highlights": [
-                "Green rolling hills with scenic beauty.",
-                "Moderate trek with breathtaking views.",
-                "Ideal for beginner to intermediate trekkers.",
-                "Rich cultural significance and historical spots."
-            ]
-        },
-        "Kookal Trail": {
-            "name": "Kookal Trail",
-            "rating": "⭐ 4.2",
-            "difficulty": "Moderate",
-            "distance": "8.0 km",
-            "time": "Est. 3h",
-            "images": ["kookal1.jpg", "kookal2.jpg", "kookal3.jpg", "kookal4.jpg"],
-            "description": "Kookal Trail is a mesmerizing journey through lush green valleys and misty surroundings.",
-            "highlights": [
-                "Charming landscapes and rich vegetation.",
-                "Mild difficulty, perfect for beginners.",
-                "Ideal spot for sunrise and sunset views.",
-                "A peaceful and refreshing trekking experience."
-            ]
-        },
-        "Mullanthandu": {
-            "name": "Mullanthandu",
-            "rating": "⭐ 4.5",
-            "difficulty": "Moderate",
-            "distance": "9.0 km",
-            "time": "Est. 3h 30m",
-            "images": ["mullanthandu1.jpg", "mullanthandu2.jpg", "mullanthandu3.jpg", "mullanthandu4.jpg"],
-            "description": "Mullanthandu is an unexplored trekking route with breathtaking natural beauty and unique rock formations.",
-            "highlights": [
-                "Scenic rocky landscapes with diverse vegetation.",
-                "Suitable for all fitness levels.",
-                "Less crowded, offering solitude.",
-                "Ideal for photography and relaxation."
-            ]
-        },
-        
-            "Misty Valley": {
-                "name": "Misty Valley",
-                "rating": "⭐ 4.6",
-                "difficulty": "Moderate",
-                "distance": "11.2 km",
-                "time": "Est. 4h",
-                "images": ["mistyvalley1.jpg", "mistyvalley2.jpg", "mistyvalley3.jpg", "mistyvalley4.jpg"],
-                "description": "Misty Valley offers a dreamy landscape with rolling green meadows covered in mist, providing a magical trekking experience.",
-                "highlights": [
-                    "Breathtaking mist-covered valleys.",
-                    "Easy-to-moderate trail with beautiful scenery.",
-                    "Ideal for nature walks and camping.",
-                    "Peaceful, less-crowded trekking experience."
-                ]
-            },
-            "Ponmudi Trail": {
-                "name": "Ponmudi Trail",
-                "rating": "⭐ 4.3",
-                "difficulty": "Moderate",
-                "distance": "9.8 km",
-                "time": "Est. 3h 30m",
-                "images": ["ponmudi1.jpg", "ponmudi2.jpg", "ponmudi3.jpg", "ponmudi4.jpg"],
-                "description": "Ponmudi Trail is a scenic trekking route with picturesque tea estates and mesmerizing hilltop views.",
-                "highlights": [
-                    "Golden grass-covered hilltops.",
-                    "Beautiful tea plantations along the route.",
-                    "Mild climate with refreshing breezes.",
-                    "Perfect for a relaxed hiking experience."
-                ]
-            },
-            "Meesapulimala": {
-                "name": "Meesapulimala",
-                "rating": "⭐ 4.8",
-                "difficulty": "Hard",
-                "distance": "15.0 km",
-                "time": "Est. 6h",
-                "images": ["meesapulimala1.jpg", "meesapulimala2.jpg", "meesapulimala3.jpg", "meesapulimala4.jpg"],
-                "description": "Meesapulimala is the second-highest peak in Kerala, offering an adventurous trek through grasslands, forests, and hilltops.",
-                "highlights": [
-                    "Unparalleled sunrise and sunset views.",
-                    "Challenging yet thrilling trekking experience.",
-                    "Spectacular mountain scenery.",
-                    "Rich biodiversity and serene environment."
-                ]
-            },
-            "Thusharagiri Waterfalls": {
-                "name": "Thusharagiri Waterfalls",
-                "rating": "⭐ 4.4",
-                "difficulty": "Moderate",
-                "distance": "7.5 km",
-                "time": "Est. 3h",
-                "images": ["thusharagiri1.jpg", "thusharagiri2.jpg", "thusharagiri3.jpg", "thusharagiri4.jpg"],
-                "description": "Thusharagiri Waterfalls offers a scenic trail leading to a mesmerizing waterfall surrounded by lush greenery.",
-                "highlights": [
-                    "Enchanting waterfall amidst dense forests.",
-                    "Refreshing and easy-to-moderate trek.",
-                    "Perfect for nature lovers and photographers.",
-                    "Opportunities for swimming in natural pools."
-                ]
-            },
-            "Periyar Wildlife Trek": {
-                "name": "Periyar Wildlife Trek",
-                "rating": "⭐ 4.7",
-                "difficulty": "Moderate",
-                "distance": "14.0 km",
-                "time": "Est. 5h",
-                "images": ["periyar1.jpg", "periyar2.jpg", "periyar3.jpg", "periyar4.jpg"],
-                "description": "Periyar Wildlife Trek is an exciting jungle trail offering sightings of elephants, tigers, and rich flora.",
-                "highlights": [
-                    "Thrilling forest walk with abundant wildlife.",
-                    "Chance to see elephants, deer, and birds.",
-                    "Guided trekking experience with park rangers.",
-                    "Diverse ecosystem with breathtaking scenery."
-                ]
-            },
-            "Gavi Forest Trail": {
-                "name": "Gavi Forest Trail",
-                "rating": "⭐ 4.5",
-                "difficulty": "Moderate",
-                "distance": "13.0 km",
-                "time": "Est. 4h 30m",
-                "images": ["gavi1.jpg", "gavi2.jpg", "gavi3.jpg", "gavi4.jpg"],
-                "description": "Gavi Forest Trail is a pristine trekking route through dense evergreen forests, offering a true escape into nature.",
-                "highlights": [
-                    "Serene and untouched forest landscapes.",
-                    "Opportunities for wildlife sightings.",
-                    "Crystal-clear lakes and waterfalls.",
-                    "Perfect for camping and eco-tourism."
-                ]
-            },
-            "Chokramudi Peak": {
-                "name": "Chokramudi Peak",
-                "rating": "⭐ 4.6",
-                "difficulty": "Hard",
-                "distance": "10.5 km",
-                "time": "Est. 4h 30m",
-                "images": ["chokramudi1.jpg", "chokramudi2.jpg", "chokramudi3.jpg", "chokramudi4.jpg"],
-                "description": "Chokramudi Peak is a challenging trek that rewards adventurers with stunning 360-degree views of Munnar’s valleys and hills.",
-                "highlights": [
-                    "Panoramic mountain views from the peak.",
-                    "Thrilling steep ascents and rocky paths.",
-                    "Perfect for adventure seekers.",
-                    "Spectacular sunrise and sunset experience."
-                ]
-            }
+        {
+            "name": "Vagamon Health Clinic",
+            "icon": "medical-icon.png",
+            "type": "Hospital"
         }
-        
-    
-    
+    ],
+    "ratingDistribution": {
+        "5": 68,
+        "4": 22,
+        "3": 6,
+        "2": 3,
+        "1": 1
+    },
+    "reviews": [
+        {
+            "user": "Anjali R",
+            "stars": "⭐⭐⭐⭐⭐",
+            "date": "Feb 25, 2024",
+            "activity": "Trekking",
+            "text": "Beautiful and peaceful place! The greenery and fresh air were amazing.",
+            "images": ["vagamon2.jpg"]
+        },
+        {
+            "user": "Ramesh K",
+            "stars": "⭐⭐⭐⭐",
+            "date": "Jan 18, 2024",
+            "activity": "Hiking",
+            "text": "Loved the misty atmosphere and pine forests, but some areas were steep.",
+            "images": []
+        },
+        {
+            "user": "Sonia J",
+            "stars": "⭐⭐⭐⭐⭐",
+            "date": "Dec 20, 2023",
+            "activity": "Paragliding",
+            "text": "One of the best paragliding spots! Stunning views from above.",
+            "images": ["vagamon3.jpg", "review4.jpg"]
+        },
+        {
+            "user": "Ajay P",
+            "stars": "⭐⭐⭐⭐",
+            "date": "Nov 10, 2023",
+            "activity": "Photography",
+            "text": "The best place for landscape photography, especially in the morning mist.",
+            "images": []
+        }
+    ]
+},
 
+"Agasthyakoodam": {
+    "name": "Agasthyakoodam Trail",
+    "rating": "⭐ 4.9",
+    "difficulty": "Hard",
+    "distance": "18.0 km",
+    "time": "Est. 7h 30m",
+    "coordinates": [77.2438, 8.6244],
+    "images": ["agasthyakoodam1.jpg", "agasthyakoodam2.jpg", "agasthyakoodam3.jpg", "agasthyakoodam4.jpg"],
+    "description": "Agasthyakoodam is one of the highest peaks in Kerala, offering a tough but rewarding trek through diverse landscapes and rare flora. This sacred peak is also an ecological hotspot with rich biodiversity.",
+    "highlights": [
+        "Home to rare medicinal plants.",
+        "Challenging trail for experienced trekkers.",
+        "Unmatched panoramic views from the peak.",
+        "Sacred site associated with Sage Agastya."
+    ],
+    "facilities": [
+        {
+            "name": "Agasthyakoodam Base Camp",
+            "icon": "hotel-icon.png",
+            "type": "Accommodation"
+        },
+        {
+            "name": "Forest Canteen",
+            "icon": "restaurant-icon.jpg",
+            "type": "Restaurant"
+        },
+        {
+            "name": "Agasthyakoodam Trek Office",
+            "icon": "info-icon.png",
+            "type": "Info Center"
+        },
+        {
+            "name": "Forest Medicinal Shop",
+            "icon": "pharmacy-icon.jpg",
+            "type": "Pharmacy"
+        },
+        {
+            "name": "Forest First Aid Station",
+            "icon": "medical-icon.png",
+            "type": "Hospital"
+        }
+    ],
+    "ratingDistribution": {
+        "5": 80,
+        "4": 15,
+        "3": 3,
+        "2": 1,
+        "1": 1
+    },
+    "reviews": [
+        {
+            "user": "Vivek N",
+            "stars": "⭐⭐⭐⭐⭐",
+            "date": "March 10, 2024",
+            "activity": "Trekking",
+            "text": "One of the toughest yet most rewarding treks in Kerala! Highly recommended.",
+            "images": ["agasthyakoodam2.jpg"]
+        },
+        {
+            "user": "Pooja S",
+            "stars": "⭐⭐⭐⭐",
+            "date": "Feb 28, 2024",
+            "activity": "Hiking",
+            "text": "The steep climbs were difficult, but the view from the top was breathtaking!",
+            "images": []
+        },
+        {
+            "user": "Rahul M",
+            "stars": "⭐⭐⭐⭐⭐",
+            "date": "Jan 5, 2024",
+            "activity": "Adventure",
+            "text": "The trek was challenging but absolutely worth it. Saw some rare plants and birds.",
+            "images": ["agasthyakoodam3.jpg", "review5.jpg"]
+        },
+        {
+            "user": "Neha R",
+            "stars": "⭐⭐⭐⭐",
+            "date": "Dec 15, 2023",
+            "activity": "Nature Exploration",
+            "text": "A great trek for those who love untouched nature and adventure.",
+            "images": []
+        }
+    ]
+},
+
+    "Sholayar Forest Reserve": {
+    "name": "Sholayar Forest Reserve Trail",
+    "rating": "⭐ 4.4",
+    "difficulty": "Hard",
+    "distance": "15.0 km",
+    "time": "Est. 6h 15m",
+    "coordinates": [76.6754, 10.3218],
+    "images": ["sholayar1.jpg", "sholayar2.jpg", "sholayar3.jpg", "sholayar4.jpg"],
+    "description": "Sholayar Forest Reserve is a pristine wilderness featuring dense rainforests, hidden waterfalls, and rich biodiversity. This trail offers an adventurous trekking experience deep into untouched nature.",
+    "highlights": [
+        "Untouched tropical rainforest experience.",
+        "Hidden waterfalls and natural pools.",
+        "Rich biodiversity including elephants and tigers.",
+        "Perfect for wildlife photography."
+    ],
+    "facilities": [
+        {
+            "name": "Jungle Retreat Homestay",
+            "icon": "hotel-icon.png",
+            "type": "Accommodation"
+        },
+        {
+            "name": "Forest Edge Café",
+            "icon": "restaurant-icon.jpg",
+            "type": "Restaurant"
+        },
+        {
+            "name": "Sholayar Info Center",
+            "icon": "info-icon.png",
+            "type": "Info Center"
+        },
+        {
+            "name": "Forest Medical Aid",
+            "icon": "pharmacy-icon.jpg",
+            "type": "Pharmacy"
+        },
+        {
+            "name": "Sholayar Health Center",
+            "icon": "medical-icon.png",
+            "type": "Hospital"
+        }
+    ],
+    "ratingDistribution": {
+        "5": 65,
+        "4": 23,
+        "3": 8,
+        "2": 3,
+        "1": 1
+    },
+    "reviews": [
+        {
+            "user": "Anand B",
+            "stars": "⭐⭐⭐⭐⭐",
+            "date": "March 5, 2024",
+            "activity": "Trekking",
+            "text": "An unforgettable experience! The waterfalls and jungle vibes are surreal.",
+            "images": ["sholayar2.jpg"]
+        },
+        {
+            "user": "Divya S",
+            "stars": "⭐⭐⭐⭐",
+            "date": "Feb 15, 2024",
+            "activity": "Wildlife Photography",
+            "text": "Spotted some amazing wildlife! A must-visit for nature lovers.",
+            "images": []
+        },
+        {
+            "user": "Rohan K",
+            "stars": "⭐⭐⭐⭐⭐",
+            "date": "Jan 22, 2024",
+            "activity": "Adventure",
+            "text": "Challenging but absolutely worth it. The dense forest is breathtaking!",
+            "images": ["sholayar3.jpg", "review6.jpg"]
+        },
+        {
+            "user": "Megha R",
+            "stars": "⭐⭐⭐⭐",
+            "date": "Dec 10, 2023",
+            "activity": "Camping",
+            "text": "Amazing spot for camping and stargazing. Would visit again!",
+            "images": []
+        }
+    ]
+},
+
+"Kallelimedu": {
+    "name": "Kallelimedu Trail",
+    "rating": "⭐ 4.3",
+    "difficulty": "Moderate",
+    "distance": "12.0 km",
+    "time": "Est. 4h",
+    "coordinates": [76.8502, 9.8045],
+    "images": ["kallelimedu1.jpg", "kallelimedu2.jpg", "kallelimedu3.jpg", "kallelimedu4.jpg"],
+    "description": "Kallelimedu is a hidden gem known for its rolling hills, misty atmosphere, and scenic landscapes. This trail is ideal for trekkers seeking a peaceful and immersive nature experience.",
+    "highlights": [
+        "Scenic hill views with misty mornings.",
+        "Less crowded trail, perfect for solitude seekers.",
+        "Mild climate with cool breezes.",
+        "Opportunities for camping and birdwatching."
+    ],
+    "facilities": [
+        {
+            "name": "Hilltop Haven Homestay",
+            "icon": "hotel-icon.png",
+            "type": "Accommodation"
+        },
+        {
+            "name": "Misty Trails Café",
+            "icon": "restaurant-icon.jpg",
+            "type": "Restaurant"
+        },
+        {
+            "name": "Kallelimedu Info Center",
+            "icon": "info-icon.png",
+            "type": "Info Center"
+        },
+        {
+            "name": "Local Pharmacy",
+            "icon": "pharmacy-icon.jpg",
+            "type": "Pharmacy"
+        },
+        {
+            "name": "Kallelimedu Medical Center",
+            "icon": "medical-icon.png",
+            "type": "Hospital"
+        }
+    ],
+    "ratingDistribution": {
+        "5": 60,
+        "4": 25,
+        "3": 10,
+        "2": 3,
+        "1": 2
+    },
+    "reviews": [
+        {
+            "user": "Nikhil M",
+            "stars": "⭐⭐⭐⭐⭐",
+            "date": "March 2, 2024",
+            "activity": "Hiking",
+            "text": "Absolutely peaceful and refreshing! Perfect for a quiet retreat.",
+            "images": ["kallelimedu2.jpg"]
+        },
+        {
+            "user": "Pavithra S",
+            "stars": "⭐⭐⭐⭐",
+            "date": "Feb 10, 2024",
+            "activity": "Photography",
+            "text": "Stunning misty landscapes! The early morning views are magical.",
+            "images": []
+        },
+        {
+            "user": "Sandeep R",
+            "stars": "⭐⭐⭐⭐⭐",
+            "date": "Jan 20, 2024",
+            "activity": "Birdwatching",
+            "text": "Saw some rare birds here! A paradise for birdwatchers.",
+            "images": ["kallelimedu3.jpg", "review7.jpg"]
+        },
+        {
+            "user": "Lakshmi N",
+            "stars": "⭐⭐⭐⭐",
+            "date": "Dec 5, 2023",
+            "activity": "Camping",
+            "text": "Amazing spot for camping and star-gazing. Peaceful and scenic.",
+            "images": []
+        }
+    ]
+},
+
+        "Vythiri": {
+    "name": "Vythiri Trail",
+    "rating": "⭐ 4.5",
+    "difficulty": "Moderate",
+    "distance": "10.0 km",
+    "time": "Est. 3h 30m",
+    "coordinates": [76.0455, 11.5495],
+    "images": ["vythiri1.jpg", "vythiri2.jpg", "vythiri3.jpg", "vythiri4.jpg"],
+    "description": "Vythiri is a lush rainforest trail in Wayanad, known for its dense greenery, fresh streams, and diverse wildlife. It is a perfect escape for nature enthusiasts looking for a scenic and peaceful trek.",
+    "highlights": [
+        "Tropical rainforest experience.",
+        "Waterfalls and freshwater streams along the trail.",
+        "Dense canopy providing shade throughout the trek.",
+        "Ideal for nature lovers and wildlife enthusiasts."
+    ],
+    "facilities": [
+        {
+            "name": "Rainforest Retreat",
+            "icon": "hotel-icon.png",
+            "type": "Accommodation"
+        },
+        {
+            "name": "Jungle View Restaurant",
+            "icon": "restaurant-icon.jpg",
+            "type": "Restaurant"
+        },
+        {
+            "name": "Vythiri Trek Info Center",
+            "icon": "info-icon.png",
+            "type": "Info Center"
+        },
+        {
+            "name": "Vythiri Pharmacy",
+            "icon": "pharmacy-icon.jpg",
+            "type": "Pharmacy"
+        },
+        {
+            "name": "Wayanad Health Clinic",
+            "icon": "medical-icon.png",
+            "type": "Hospital"
+        }
+    ],
+    "ratingDistribution": {
+        "5": 68,
+        "4": 22,
+        "3": 6,
+        "2": 3,
+        "1": 1
+    },
+    "reviews": [
+        {
+            "user": "Sreejith P",
+            "stars": "⭐⭐⭐⭐⭐",
+            "date": "March 8, 2024",
+            "activity": "Hiking",
+            "text": "The best rainforest trail in Wayanad! Absolutely breathtaking.",
+            "images": ["vythiri2.jpg"]
+        },
+        {
+            "user": "Anjali R",
+            "stars": "⭐⭐⭐⭐",
+            "date": "Feb 22, 2024",
+            "activity": "Nature Walk",
+            "text": "A peaceful trek with stunning waterfalls along the way.",
+            "images": []
+        },
+        {
+            "user": "Vishnu K",
+            "stars": "⭐⭐⭐⭐⭐",
+            "date": "Jan 10, 2024",
+            "activity": "Adventure",
+            "text": "Great for a weekend escape. The forest sounds are magical!",
+            "images": ["vythiri3.jpg", "review8.jpg"]
+        },
+        {
+            "user": "Lakshmi M",
+            "stars": "⭐⭐⭐⭐",
+            "date": "Dec 2, 2023",
+            "activity": "Birdwatching",
+            "text": "Saw many rare birds. Perfect for wildlife lovers!",
+            "images": []
+        }
+    ]
+},
+
+"Pannipara Hill Top": {
+    "name": "Pannipara Hill Top Trail",
+    "rating": "⭐ 4.2",
+    "difficulty": "Hard",
+    "distance": "12.0 km",
+    "time": "Est. 5h",
+    "coordinates": [76.2123, 11.3012],
+    "images": ["pannipara1.jpg", "pannipara2.jpg", "pannipara3.jpg", "pannipara4.jpg"],
+    "description": "Pannipara Hill Top is a challenging trek that rewards adventurers with mesmerizing sunrise and sunset views. This trail is known for its steep inclines and is perfect for experienced trekkers seeking an adrenaline rush.",
+    "highlights": [
+        "Breathtaking panoramic views from the hilltop.",
+        "Challenging terrain with steep inclines.",
+        "Best for experienced trekkers and adventure seekers.",
+        "Ideal for camping under the stars."
+    ],
+    "facilities": [
+        {
+            "name": "Summit View Campsite",
+            "icon": "hotel-icon.png",
+            "type": "Accommodation"
+        },
+        {
+            "name": "Hilltop Café",
+            "icon": "restaurant-icon.jpg",
+            "type": "Restaurant"
+        },
+        {
+            "name": "Trekking Assistance Point",
+            "icon": "info-icon.png",
+            "type": "Info Center"
+        },
+        {
+            "name": "Pannipara Medical Aid",
+            "icon": "pharmacy-icon.jpg",
+            "type": "Pharmacy"
+        },
+        {
+            "name": "Nearby First Aid Station",
+            "icon": "medical-icon.png",
+            "type": "Hospital"
+        }
+    ],
+    "ratingDistribution": {
+        "5": 55,
+        "4": 30,
+        "3": 10,
+        "2": 3,
+        "1": 2
+    },
+    "reviews": [
+        {
+            "user": "Sandeep M",
+            "stars": "⭐⭐⭐⭐⭐",
+            "date": "March 5, 2024",
+            "activity": "Trekking",
+            "text": "The climb was tough but totally worth it! The view is unbeatable.",
+            "images": ["pannipara2.jpg"]
+        },
+        {
+            "user": "Divya K",
+            "stars": "⭐⭐⭐⭐",
+            "date": "Feb 12, 2024",
+            "activity": "Camping",
+            "text": "Loved the night camping experience under the stars!",
+            "images": []
+        },
+        {
+            "user": "Rahul C",
+            "stars": "⭐⭐⭐⭐⭐",
+            "date": "Jan 30, 2024",
+            "activity": "Adventure",
+            "text": "A must-do trek for adventure seekers. The summit view is magical!",
+            "images": ["pannipara3.jpg", "review9.jpg"]
+        },
+        {
+            "user": "Megha N",
+            "stars": "⭐⭐⭐⭐",
+            "date": "Dec 15, 2023",
+            "activity": "Photography",
+            "text": "Perfect place for landscape photography. The sunrise is stunning!",
+            "images": []
+        }
+    ]
+},
+
+       "Ramangara": {
+    "name": "Ramangara Trail",
+    "rating": "⭐ 4.5",
+    "difficulty": "Moderate",
+    "distance": "8.5 km",
+    "time": "Est. 3h",
+    "coordinates": [77.2836, 12.7136],
+    "images": ["ramangara1.jpg", "ramangara2.jpg", "ramangara3.jpg", "ramangara4.jpg"],
+    "description": "Ramangara is famous for its unique rocky landscapes, making it a popular trekking and rock climbing destination. The trail offers breathtaking views, diverse rock formations, and an adventurous experience.",
+    "highlights": [
+        "Unique rocky terrain with stunning landscapes.",
+        "Perfect for rock climbing and rappelling.",
+        "Spectacular views of the surroundings.",
+        "Moderate difficulty, suitable for most trekkers."
+    ],
+    "facilities": [
+        {
+            "name": "Cliff View Resort",
+            "icon": "hotel-icon.png",
+            "type": "Accommodation"
+        },
+        {
+            "name": "Hillside Café",
+            "icon": "restaurant-icon.jpg",
+            "type": "Restaurant"
+        },
+        {
+            "name": "Ramangara Trek Info Center",
+            "icon": "info-icon.png",
+            "type": "Info Center"
+        },
+        {
+            "name": "24/7 Medical Assistance",
+            "icon": "pharmacy-icon.jpg",
+            "type": "Pharmacy"
+        },
+        {
+            "name": "Ramangara Health Clinic",
+            "icon": "medical-icon.png",
+            "type": "Hospital"
+        }
+    ],
+    "ratingDistribution": {
+        "5": 65,
+        "4": 25,
+        "3": 7,
+        "2": 2,
+        "1": 1
+    },
+    "reviews": [
+        {
+            "user": "Akhil M",
+            "stars": "⭐⭐⭐⭐⭐",
+            "date": "March 12, 2024",
+            "activity": "Rock Climbing",
+            "text": "Incredible place for adventure lovers! The rock formations are amazing.",
+            "images": ["ramangara2.jpg"]
+        },
+        {
+            "user": "Nithya S",
+            "stars": "⭐⭐⭐⭐",
+            "date": "Feb 25, 2024",
+            "activity": "Trekking",
+            "text": "Loved the views! The climb was a bit challenging but totally worth it.",
+            "images": []
+        },
+        {
+            "user": "Vikram R",
+            "stars": "⭐⭐⭐⭐⭐",
+            "date": "Jan 10, 2024",
+            "activity": "Adventure",
+            "text": "Great trail with a mix of easy and tough spots. Must-visit for climbers!",
+            "images": ["ramangara3.jpg", "review5.jpg"]
+        },
+        {
+            "user": "Swetha K",
+            "stars": "⭐⭐⭐⭐",
+            "date": "Dec 5, 2023",
+            "activity": "Photography",
+            "text": "Captured some breathtaking shots. The landscape is just mesmerizing!",
+            "images": []
+        }
+    ]
+},
+
+"Illithod Forest Trail": {
+    "name": "Illithod Forest Trail",
+    "rating": "⭐ 4.3",
+    "difficulty": "Moderate",
+    "distance": "9.5 km",
+    "time": "Est. 3h 15m",
+    "coordinates": [76.5001, 10.1617],
+    "images": ["illithod1.jpg", "illithod2.jpg", "illithod3.jpg", "illithod4.jpg"],
+    "description": "Illithod Forest Trail is a dense forest trek filled with diverse flora, fauna, and an enchanting natural environment. It provides a peaceful escape into the greenery, perfect for those seeking a quiet yet adventurous trek.",
+    "highlights": [
+        "Thick forests with cool, shaded trails.",
+        "Mildly challenging, suitable for beginners.",
+        "Frequent sightings of birds and small wildlife.",
+        "A peaceful and refreshing trekking experience."
+    ],
+    "facilities": [
+        {
+            "name": "Forest Camp Stay",
+            "icon": "hotel-icon.png",
+            "type": "Accommodation"
+        },
+        {
+            "name": "Jungle Bites Café",
+            "icon": "restaurant-icon.jpg",
+            "type": "Restaurant"
+        },
+        {
+            "name": "Trek Assistance Center",
+            "icon": "info-icon.png",
+            "type": "Info Center"
+        },
+        {
+            "name": "Local Pharmacy",
+            "icon": "pharmacy-icon.jpg",
+            "type": "Pharmacy"
+        },
+        {
+            "name": "Illithod First Aid Center",
+            "icon": "medical-icon.png",
+            "type": "Hospital"
+        }
+    ],
+    "ratingDistribution": {
+        "5": 60,
+        "4": 27,
+        "3": 8,
+        "2": 3,
+        "1": 2
+    },
+    "reviews": [
+        {
+            "user": "Praveen N",
+            "stars": "⭐⭐⭐⭐⭐",
+            "date": "March 10, 2024",
+            "activity": "Hiking",
+            "text": "Beautiful forest trail! The dense trees and fresh air were so refreshing.",
+            "images": ["illithod2.jpg"]
+        },
+        {
+            "user": "Keerthi J",
+            "stars": "⭐⭐⭐⭐",
+            "date": "Feb 18, 2024",
+            "activity": "Nature Walk",
+            "text": "A peaceful and quiet trek. Loved the wildlife sightings!",
+            "images": []
+        },
+        {
+            "user": "Rakesh P",
+            "stars": "⭐⭐⭐⭐⭐",
+            "date": "Jan 5, 2024",
+            "activity": "Birdwatching",
+            "text": "Saw some rare birds. A perfect trail for bird lovers and photographers!",
+            "images": ["illithod3.jpg", "review7.jpg"]
+        },
+        {
+            "user": "Megha K",
+            "stars": "⭐⭐⭐⭐",
+            "date": "Dec 22, 2023",
+            "activity": "Solo Trek",
+            "text": "Nice trail with good shade. Good for both beginners and experienced trekkers.",
+            "images": []
+        }
+    ]
+},
+
+        "Sabarimala Forest Trail": {
+    "name": "Sabarimala Forest Trail",
+    "rating": "⭐ 4.8",
+    "difficulty": "Hard",
+    "distance": "16.0 km",
+    "time": "Est. 6h",
+    "coordinates": [77.0732, 9.4301],
+    "images": ["sabarimala1.jpg", "sabarimala2.jpg", "sabarimala3.jpg", "sabarimala4.jpg"],
+    "description": "A spiritual and adventurous trek through the dense Sabarimala forests, leading to a serene and sacred destination.",
+    "highlights": [
+        "Sacred route with religious significance.",
+        "Deep forests with ancient trees.",
+        "Challenging terrain requiring endurance.",
+        "A blend of spirituality and adventure."
+    ],
+    "facilities": [
+        {
+            "name": "Pilgrim Stay Guesthouse",
+            "icon": "hotel-icon.png",
+            "type": "Accommodation"
+        },
+        {
+            "name": "Forest View Restaurant",
+            "icon": "restaurant-icon.jpg",
+            "type": "Restaurant"
+        },
+        {
+            "name": "Trail Information Center",
+            "icon": "info-icon.png",
+            "type": "Info Center"
+        },
+        {
+            "name": "24/7 Medical Assistance",
+            "icon": "pharmacy-icon.jpg",
+            "type": "Pharmacy"
+        },
+        {
+            "name": "Sabarimala Health Center",
+            "icon": "medical-icon.png",
+            "type": "Hospital"
+        }
+    ],
+    "ratingDistribution": {
+        "5": 75,
+        "4": 18,
+        "3": 5,
+        "2": 1,
+        "1": 1
+    },
+    "reviews": [
+        {
+            "user": "Hari K",
+            "stars": "⭐⭐⭐⭐⭐",
+            "date": "March 15, 2024",
+            "activity": "Pilgrimage",
+            "text": "A deeply spiritual experience. The trek is challenging but rewarding.",
+            "images": ["sabarimala2.jpg"]
+        },
+        {
+            "user": "Meenakshi S",
+            "stars": "⭐⭐⭐⭐",
+            "date": "Feb 22, 2024",
+            "activity": "Trekking",
+            "text": "The forest route was mesmerizing. Prepare well for the steep climbs.",
+            "images": []
+        },
+        {
+            "user": "Anil Kumar",
+            "stars": "⭐⭐⭐⭐⭐",
+            "date": "Jan 5, 2024",
+            "activity": "Adventure",
+            "text": "A great mix of nature and spirituality. Amazing experience!",
+            "images": ["sabarimala3.jpg"]
+        },
+        {
+            "user": "Nisha R",
+            "stars": "⭐⭐⭐⭐",
+            "date": "Dec 28, 2023",
+            "activity": "Solo Trek",
+            "text": "A peaceful trek through nature. Would recommend to serious trekkers.",
+            "images": []
+        }
+    ]
+},
+
+"Anamudi": {
+    "name": "Anamudi Trail",
+    "rating": "⭐ 4.9",
+    "difficulty": "Hard",
+    "distance": "13.5 km",
+    "time": "Est. 5h 30m",
+    "coordinates": [77.0674, 10.1680],
+    "images": ["anamudi1.jpg", "anamudi2.jpg", "anamudi3.jpg", "anamudi4.jpg"],
+    "description": "Anamudi, the highest peak in South India, offers a thrilling trekking experience with unparalleled views.",
+    "highlights": [
+        "Highest peak in South India.",
+        "Challenging but rewarding climb.",
+        "Breathtaking views of the Western Ghats.",
+        "Rich biodiversity with unique flora and fauna."
+    ],
+    "facilities": [
+        {
+            "name": "Anamudi Base Camp",
+            "icon": "hotel-icon.png",
+            "type": "Accommodation"
+        },
+        {
+            "name": "Mountain View Café",
+            "icon": "restaurant-icon.jpg",
+            "type": "Restaurant"
+        },
+        {
+            "name": "Trek Assistance Center",
+            "icon": "info-icon.png",
+            "type": "Info Center"
+        },
+        {
+            "name": "24/7 Medical Support",
+            "icon": "pharmacy-icon.jpg",
+            "type": "Pharmacy"
+        },
+        {
+            "name": "Anamudi Health Clinic",
+            "icon": "medical-icon.png",
+            "type": "Hospital"
+        }
+    ],
+    "ratingDistribution": {
+        "5": 80,
+        "4": 15,
+        "3": 4,
+        "2": 1,
+        "1": 0
+    },
+    "reviews": [
+        {
+            "user": "Vikram N",
+            "stars": "⭐⭐⭐⭐⭐",
+            "date": "March 12, 2024",
+            "activity": "Trekking",
+            "text": "Tough but amazing! The view from the top is breathtaking.",
+            "images": ["anamudi2.jpg"]
+        },
+        {
+            "user": "Swati J",
+            "stars": "⭐⭐⭐⭐",
+            "date": "Feb 28, 2024",
+            "activity": "Adventure",
+            "text": "Challenging but worth every step! Stunning scenery.",
+            "images": []
+        }
+    ]
+},
+
+"Brahmagiri Hills": {
+    "name": "Brahmagiri Hills Trail",
+    "rating": "⭐ 4.4",
+    "difficulty": "Moderate",
+    "distance": "10.5 km",
+    "time": "Est. 4h",
+    "coordinates": [75.9884, 11.9700],
+    "images": ["brahmagiri1.jpg", "brahmagiri2.jpg", "brahmagiri3.jpg", "brahmagiri4.jpg"],
+    "description": "Brahmagiri Hills offers a scenic trekking experience with lush green meadows and beautiful landscapes.",
+    "highlights": [
+        "Green rolling hills with scenic beauty.",
+        "Moderate trek with breathtaking views.",
+        "Ideal for beginner to intermediate trekkers.",
+        "Rich cultural significance and historical spots."
+    ],
+    "facilities": [
+        {
+            "name": "Hilltop Lodge",
+            "icon": "hotel-icon.png",
+            "type": "Accommodation"
+        },
+        {
+            "name": "Meadow Café",
+            "icon": "restaurant-icon.jpg",
+            "type": "Restaurant"
+        },
+        {
+            "name": "Trek Information Point",
+            "icon": "info-icon.png",
+            "type": "Info Center"
+        },
+        {
+            "name": "Emergency Medical Aid",
+            "icon": "pharmacy-icon.jpg",
+            "type": "Pharmacy"
+        },
+        {
+            "name": "Brahmagiri Medical Center",
+            "icon": "medical-icon.png",
+            "type": "Hospital"
+        }
+    ],
+    "ratingDistribution": {
+        "5": 70,
+        "4": 20,
+        "3": 7,
+        "2": 2,
+        "1": 1
+    },
+    "reviews": [
+        {
+            "user": "Harsha R",
+            "stars": "⭐⭐⭐⭐⭐",
+            "date": "March 10, 2024",
+            "activity": "Nature Walk",
+            "text": "One of the best scenic treks I’ve done. So peaceful!",
+            "images": ["brahmagiri2.jpg"]
+        },
+        {
+            "user": "Neha P",
+            "stars": "⭐⭐⭐⭐",
+            "date": "Feb 22, 2024",
+            "activity": "Trekking",
+            "text": "Lovely trail. The hills were covered in mist. A must-visit!",
+            "images": []
+        }
+    ]
+},
+
+        "Kookal Trail": {
+    "name": "Kookal Trail",
+    "rating": "⭐ 4.2",
+    "difficulty": "Moderate",
+    "distance": "8.0 km",
+    "time": "Est. 3h",
+    "coordinates": [77.3641, 10.2205],
+    "images": ["kookal1.jpg", "kookal2.jpg", "kookal3.jpg", "kookal4.jpg"],
+    "description": "Kookal Trail is a mesmerizing journey through lush green valleys and misty surroundings.",
+    "highlights": [
+        "Charming landscapes and rich vegetation.",
+        "Mild difficulty, perfect for beginners.",
+        "Ideal spot for sunrise and sunset views.",
+        "A peaceful and refreshing trekking experience."
+    ],
+    "facilities": [
+        {
+            "name": "Kookal Homestay",
+            "icon": "hotel-icon.png",
+            "type": "Accommodation"
+        },
+        {
+            "name": "Nature View Café",
+            "icon": "restaurant-icon.jpg",
+            "type": "Restaurant"
+        },
+        {
+            "name": "Trek Assistance Center",
+            "icon": "info-icon.png",
+            "type": "Info Center"
+        },
+        {
+            "name": "24/7 Medical Aid",
+            "icon": "pharmacy-icon.jpg",
+            "type": "Pharmacy"
+        },
+        {
+            "name": "Kookal Health Clinic",
+            "icon": "medical-icon.png",
+            "type": "Hospital"
+        }
+    ],
+    "ratingDistribution": {
+        "5": 65,
+        "4": 25,
+        "3": 7,
+        "2": 2,
+        "1": 1
+    },
+    "reviews": [
+        {
+            "user": "Deepak M",
+            "stars": "⭐⭐⭐⭐⭐",
+            "date": "March 5, 2024",
+            "activity": "Trekking",
+            "text": "A perfect blend of adventure and nature. Loved the peaceful vibes!",
+            "images": ["kookal2.jpg"]
+        },
+        {
+            "user": "Riya K",
+            "stars": "⭐⭐⭐⭐",
+            "date": "Feb 20, 2024",
+            "activity": "Hiking",
+            "text": "Great trail for beginners! The views were breathtaking.",
+            "images": []
+        }
+    ]
+},
+
+"Mullanthandu": {
+    "name": "Mullanthandu",
+    "rating": "⭐ 4.5",
+    "difficulty": "Moderate",
+    "distance": "9.0 km",
+    "time": "Est. 3h 30m",
+    "coordinates": [77.2357, 10.1249],
+    "images": ["mullanthandu1.jpg", "mullanthandu2.jpg", "mullanthandu3.jpg", "mullanthandu4.jpg"],
+    "description": "Mullanthandu is an unexplored trekking route with breathtaking natural beauty and unique rock formations.",
+    "highlights": [
+        "Scenic rocky landscapes with diverse vegetation.",
+        "Suitable for all fitness levels.",
+        "Less crowded, offering solitude.",
+        "Ideal for photography and relaxation."
+    ],
+    "facilities": [
+        {
+            "name": "Mullanthandu Retreat",
+            "icon": "hotel-icon.png",
+            "type": "Accommodation"
+        },
+        {
+            "name": "Hillside Diner",
+            "icon": "restaurant-icon.jpg",
+            "type": "Restaurant"
+        },
+        {
+            "name": "Trekking Info Desk",
+            "icon": "info-icon.png",
+            "type": "Info Center"
+        },
+        {
+            "name": "Emergency Pharmacy",
+            "icon": "pharmacy-icon.jpg",
+            "type": "Pharmacy"
+        },
+        {
+            "name": "Mullanthandu Health Post",
+            "icon": "medical-icon.png",
+            "type": "Hospital"
+        }
+    ],
+    "ratingDistribution": {
+        "5": 70,
+        "4": 20,
+        "3": 7,
+        "2": 2,
+        "1": 1
+    },
+    "reviews": [
+        {
+            "user": "Amit R",
+            "stars": "⭐⭐⭐⭐⭐",
+            "date": "March 10, 2024",
+            "activity": "Trekking",
+            "text": "An undiscovered gem! Beautiful landscapes and quiet surroundings.",
+            "images": ["mullanthandu3.jpg"]
+        },
+        {
+            "user": "Neha P",
+            "stars": "⭐⭐⭐⭐",
+            "date": "Feb 15, 2024",
+            "activity": "Hiking",
+            "text": "The rock formations were a highlight! Worth the hike.",
+            "images": []
+        }
+    ]
+},
+
+"Varattumedu": {
+    "name": "Varattumedu Trail",
+    "rating": "⭐ 4.4",
+    "difficulty": "Moderate",
+    "distance": "11.5 km",
+    "time": "Est. 4h",
+    "coordinates": [77.1456, 9.5732],
+    "images": ["varattumedu1.jpg", "varattumedu2.jpg", "varattumedu3.jpg", "varattumedu4.jpg"],
+    "description": "Varattumedu Trail is a picturesque hiking route known for its stunning valley views and serene trekking experience through misty hills.",
+    "highlights": [
+        "Panoramic hilltop views with lush green valleys.",
+        "Less crowded, perfect for peaceful hikes.",
+        "Cool climate and refreshing mountain breeze.",
+        "Ideal for both beginners and experienced trekkers."
+    ],
+    "facilities": [
+        {
+            "name": "Hilltop Haven Resort",
+            "icon": "hotel-icon.png",
+            "type": "Accommodation"
+        },
+        {
+            "name": "Trailside Café",
+            "icon": "restaurant-icon.jpg",
+            "type": "Restaurant"
+        },
+        {
+            "name": "Varattumedu Trek Info Center",
+            "icon": "info-icon.png",
+            "type": "Info Center"
+        },
+        {
+            "name": "Varattumedu Health Post",
+            "icon": "medical-icon.png",
+            "type": "Hospital"
+        }
+    ],
+    "ratingDistribution": {
+        "5": 60,
+        "4": 25,
+        "3": 10,
+        "2": 3,
+        "1": 2
+    },
+    "reviews": [
+        {
+            "user": "Vishnu P",
+            "stars": "⭐⭐⭐⭐⭐",
+            "date": "March 8, 2024",
+            "activity": "Hiking",
+            "text": "One of the best trails for a peaceful trek! The views are stunning.",
+            "images": ["varattumedu2.jpg"]
+        },
+        {
+            "user": "Neha K",
+            "stars": "⭐⭐⭐⭐",
+            "date": "Feb 22, 2024",
+            "activity": "Trekking",
+            "text": "A great moderate hike, but some parts were a little steep.",
+            "images": []
+        }
+    ]
+},
+
+"Naalumala": {
+    "name": "Naalumala Trail",
+    "rating": "⭐ 4.6",
+    "difficulty": "Hard",
+    "distance": "13.0 km",
+    "time": "Est. 5h 30m",
+    "coordinates": [77.1984, 9.6021],
+    "images": ["naalumala1.jpg", "naalumala2.jpg", "naalumala3.jpg", "naalumala4.jpg"],
+    "description": "Naalumala Trail is a challenging trekking route through dense forests and high-altitude peaks, offering stunning views and adventurous pathways.",
+    "highlights": [
+        "Exciting trail with steep climbs and rocky terrain.",
+        "Rich in biodiversity with exotic flora and fauna.",
+        "Uninterrupted panoramic views from the summit.",
+        "Perfect for experienced trekkers seeking adventure."
+    ],
+    "facilities": [
+        {
+            "name": "Naalumala Eco Stay",
+            "icon": "hotel-icon.png",
+            "type": "Accommodation"
+        },
+        {
+            "name": "Summit Point Restaurant",
+            "icon": "restaurant-icon.jpg",
+            "type": "Restaurant"
+        },
+        {
+            "name": "Naalumala Trekking Office",
+            "icon": "info-icon.png",
+            "type": "Info Center"
+        },
+        {
+            "name": "Naalumala First Aid Center",
+            "icon": "medical-icon.png",
+            "type": "Hospital"
+        }
+    ],
+    "ratingDistribution": {
+        "5": 70,
+        "4": 18,
+        "3": 7,
+        "2": 3,
+        "1": 2
+    },
+    "reviews": [
+        {
+            "user": "Arjun R",
+            "stars": "⭐⭐⭐⭐⭐",
+            "date": "March 12, 2024",
+            "activity": "Adventure Trek",
+            "text": "This was an amazing experience! The climb was tough but worth it.",
+            "images": ["naalumala3.jpg"]
+        },
+        {
+            "user": "Lakshmi M",
+            "stars": "⭐⭐⭐⭐",
+            "date": "Feb 28, 2024",
+            "activity": "Trekking",
+            "text": "Loved the views at the top, but be prepared for a tough hike.",
+            "images": []
+        }
+    ]
+},
+
+"Swargam Medu": {
+    "name": "Swargam Medu Trail",
+    "rating": "⭐ 4.8",
+    "difficulty": "Moderate",
+    "distance": "10.5 km",
+    "time": "Est. 4h",
+    "coordinates": [77.1786, 9.5893],
+    "images": ["swargammedu1.jpg", "swargammedu2.jpg", "swargammedu3.jpg", "swargammedu4.jpg"],
+    "description": "Swargam Medu Trail, meaning 'Heavenly Peak,' is a breathtaking trekking destination with rolling green hills and mist-covered landscapes.",
+    "highlights": [
+        "Panoramic 360-degree views from the top.",
+        "Serene and untouched natural beauty.",
+        "Cool mountain breezes and misty weather.",
+        "Ideal for photography, picnics, and peaceful hikes."
+    ],
+    "facilities": [
+        {
+            "name": "Swargam Medu Retreat",
+            "icon": "hotel-icon.png",
+            "type": "Accommodation"
+        },
+        {
+            "name": "Skyline Café",
+            "icon": "restaurant-icon.jpg",
+            "type": "Restaurant"
+        },
+        {
+            "name": "Swargam Medu Info Point",
+            "icon": "info-icon.png",
+            "type": "Info Center"
+        },
+        {
+            "name": "Swargam Medu Medical Aid",
+            "icon": "medical-icon.png",
+            "type": "Hospital"
+        }
+    ],
+    "ratingDistribution": {
+        "5": 80,
+        "4": 15,
+        "3": 3,
+        "2": 1,
+        "1": 1
+    },
+    "reviews": [
+        {
+            "user": "Manoj S",
+            "stars": "⭐⭐⭐⭐⭐",
+            "date": "March 10, 2024",
+            "activity": "Scenic Trekking",
+            "text": "This place truly feels like heaven! A must-visit for nature lovers.",
+            "images": ["swargammedu2.jpg"]
+        },
+        {
+            "user": "Divya R",
+            "stars": "⭐⭐⭐⭐",
+            "date": "Feb 20, 2024",
+            "activity": "Hiking",
+            "text": "Beautiful location! The misty peaks and cool breeze made the trek perfect.",
+            "images": []
+        }
+    ]
+},
+  "Therivumala": {
+    "name": "Therivumala Trail",
+    "rating": "⭐ 4.5",
+    "difficulty": "Moderate",
+    "distance": "10.8 km",
+    "time": "Est. 4h",
+    "coordinates": [77.2198, 9.4736],
+    "images": ["therivumala1.jpg", "therivumala2.jpg", "therivumala3.jpg", "therivumala4.jpg"],
+    "description": "Therivumala Trail is a stunning trekking route offering panoramic views of rolling hills and serene forest landscapes.",
+    "highlights": [
+        "Scenic hilltop views with misty surroundings.",
+        "Less crowded, ideal for peaceful hikes.",
+        "Opportunities for birdwatching and photography.",
+        "Cool climate with fresh mountain breezes."
+    ],
+    "facilities": [
+        {
+            "name": "Therivumala Eco Stay",
+            "icon": "hotel-icon.png",
+            "type": "Accommodation"
+        },
+        {
+            "name": "Hilltop Viewpoint Café",
+            "icon": "restaurant-icon.jpg",
+            "type": "Restaurant"
+        },
+        {
+            "name": "Therivumala Info Center",
+            "icon": "info-icon.png",
+            "type": "Info Center"
+        },
+        {
+            "name": "Therivumala Medical Post",
+            "icon": "medical-icon.png",
+            "type": "Hospital"
+        }
+    ],
+    "ratingDistribution": {
+        "5": 65,
+        "4": 22,
+        "3": 8,
+        "2": 3,
+        "1": 2
+    },
+    "reviews": [
+        {
+            "user": "Rohan S",
+            "stars": "⭐⭐⭐⭐⭐",
+            "date": "March 5, 2024",
+            "activity": "Trekking",
+            "text": "A hidden gem with breathtaking views and a peaceful trail.",
+            "images": ["therivumala3.jpg"]
+        },
+        {
+            "user": "Neethu K",
+            "stars": "⭐⭐⭐⭐",
+            "date": "Feb 18, 2024",
+            "activity": "Hiking",
+            "text": "Loved the experience, though some paths were a bit steep.",
+            "images": []
+        }
+    ]
+},
+
+"Uluppunni": {
+    "name": "Uluppunni Trail",
+    "rating": "⭐ 4.7",
+    "difficulty": "Moderate",
+    "distance": "12.3 km",
+    "time": "Est. 4h 30m",
+    "coordinates": [77.1562, 9.5927],
+    "images": ["uluppunni1.jpg", "uluppunni2.jpg", "uluppunni3.jpg", "uluppunni4.jpg"],
+    "description": "Uluppunni Trail is a breathtaking trekking route through lush meadows and gentle slopes, offering a mesmerizing experience.",
+    "highlights": [
+        "Rolling green meadows and stunning viewpoints.",
+        "Mild and refreshing climate, perfect for day hikes.",
+        "Opportunities for off-road jeep rides and camping.",
+        "Peaceful and serene environment away from crowds."
+    ],
+    "facilities": [
+        {
+            "name": "Uluppunni Hill Resort",
+            "icon": "hotel-icon.png",
+            "type": "Accommodation"
+        },
+        {
+            "name": "Meadow Café",
+            "icon": "restaurant-icon.jpg",
+            "type": "Restaurant"
+        },
+        {
+            "name": "Uluppunni Trekking Office",
+            "icon": "info-icon.png",
+            "type": "Info Center"
+        },
+        {
+            "name": "Uluppunni Health Care",
+            "icon": "medical-icon.png",
+            "type": "Hospital"
+        }
+    ],
+    "ratingDistribution": {
+        "5": 72,
+        "4": 18,
+        "3": 6,
+        "2": 2,
+        "1": 2
+    },
+    "reviews": [
+        {
+            "user": "Ajay M",
+            "stars": "⭐⭐⭐⭐⭐",
+            "date": "March 2, 2024",
+            "activity": "Trekking",
+            "text": "The landscapes here are just magical. A perfect escape from city life!",
+            "images": ["uluppunni2.jpg"]
+        },
+        {
+            "user": "Reshma V",
+            "stars": "⭐⭐⭐⭐",
+            "date": "Feb 20, 2024",
+            "activity": "Hiking",
+            "text": "Great trek, but be prepared for sudden weather changes.",
+            "images": []
+        }
+    ]
+},
+
+"Urumbikara": {
+    "name": "Urumbikara Trail",
+    "rating": "⭐ 4.6",
+    "difficulty": "Hard",
+    "distance": "14.5 km",
+    "time": "Est. 5h 30m",
+    "coordinates": [77.1987, 9.6145],
+    "images": ["urumbikara1.jpg", "urumbikara2.jpg", "urumbikara3.jpg", "urumbikara4.jpg"],
+    "description": "Urumbikara Trail is an adventurous trek known for its thrilling ascents, rocky paths, and mesmerizing mountain views.",
+    "highlights": [
+        "Challenging trek with steep climbs and rocky paths.",
+        "Breathtaking sunrise and sunset views from the top.",
+        "Rich biodiversity with chances to spot rare wildlife.",
+        "Perfect for experienced trekkers and adventure seekers."
+    ],
+    "facilities": [
+        {
+            "name": "Urumbikara Adventure Lodge",
+            "icon": "hotel-icon.png",
+            "type": "Accommodation"
+        },
+        {
+            "name": "Summit Point Café",
+            "icon": "restaurant-icon.jpg",
+            "type": "Restaurant"
+        },
+        {
+            "name": "Urumbikara Trekking Info Center",
+            "icon": "info-icon.png",
+            "type": "Info Center"
+        },
+        {
+            "name": "Urumbikara First Aid Center",
+            "icon": "medical-icon.png",
+            "type": "Hospital"
+        }
+    ],
+    "ratingDistribution": {
+        "5": 75,
+        "4": 17,
+        "3": 5,
+        "2": 2,
+        "1": 1
+    },
+    "reviews": [
+        {
+            "user": "Nikhil R",
+            "stars": "⭐⭐⭐⭐⭐",
+            "date": "March 10, 2024",
+            "activity": "Adventure Trek",
+            "text": "One of the most thrilling treks I've ever done! The climb is tough but rewarding.",
+            "images": ["urumbikara3.jpg"]
+        },
+        {
+            "user": "Shruthi P",
+            "stars": "⭐⭐⭐⭐",
+            "date": "Feb 25, 2024",
+            "activity": "Trekking",
+            "text": "Amazing place, but make sure you're prepared for a long hike!",
+            "images": []
+        }
+    ]
+},
+"Kakkadampoyil": {
+    "name": "Kakkadampoyil Trail",
+    "rating": "⭐ 4.5",
+    "difficulty": "Moderate",
+    "distance": "11.0 km",
+    "time": "Est. 3h 45m",
+    "coordinates": [76.1302, 11.4117],
+    "images": ["kakkadampoyil1.jpg", "kakkadampoyil2.jpg", "kakkadampoyil3.jpg", "kakkadampoyil4.jpg"],
+    "description": "Kakkadampoyil is a serene hill station with misty landscapes, waterfalls, and dense forests, offering a refreshing trekking experience.",
+    "highlights": [
+        "Lush greenery and mist-covered hills.",
+        "Beautiful waterfalls along the route.",
+        "Cool climate and peaceful surroundings.",
+        "Ideal for birdwatching and nature photography."
+    ],
+    "facilities": [
+        {
+            "name": "Kakkadampoyil Hill Resort",
+            "icon": "hotel-icon.png",
+            "type": "Accommodation"
+        },
+        {
+            "name": "Mist Valley Café",
+            "icon": "restaurant-icon.jpg",
+            "type": "Restaurant"
+        },
+        {
+            "name": "Kakkadampoyil Info Center",
+            "icon": "info-icon.png",
+            "type": "Info Center"
+        },
+        {
+            "name": "Kakkadampoyil Medical Aid",
+            "icon": "medical-icon.png",
+            "type": "Hospital"
+        }
+    ],
+    "ratingDistribution": {
+        "5": 68,
+        "4": 22,
+        "3": 6,
+        "2": 3,
+        "1": 1
+    },
+    "reviews": [
+        {
+            "user": "Sandeep K",
+            "stars": "⭐⭐⭐⭐⭐",
+            "date": "March 15, 2024",
+            "activity": "Trekking",
+            "text": "Absolutely stunning place! The waterfalls and misty views make it a perfect weekend getaway.",
+            "images": ["kakkadampoyil2.jpg"]
+        },
+        {
+            "user": "Amrita P",
+            "stars": "⭐⭐⭐⭐",
+            "date": "Feb 28, 2024",
+            "activity": "Hiking",
+            "text": "Lovely trail with refreshing breezes. Some parts can be slippery after rain.",
+            "images": []
+        }
+    ]
+},
+
+"Kurishumala": {
+    "name": "Kurishumala Trail",
+    "rating": "⭐ 4.6",
+    "difficulty": "Moderate",
+    "distance": "9.2 km",
+    "time": "Est. 3h 20m",
+    "coordinates": [76.8684, 9.7336],
+    "images": ["kurishumala1.jpg", "kurishumala2.jpg", "kurishumala3.jpg", "kurishumala4.jpg"],
+    "description": "Kurishumala is a scenic hill trail known for its spiritual significance, breathtaking viewpoints, and tranquil surroundings.",
+    "highlights": [
+        "Spiritual trek with a peaceful ambiance.",
+        "Panoramic views of Vagamon hills and tea estates.",
+        "Mild trekking route, suitable for all ages.",
+        "Cool climate with frequent misty cover."
+    ],
+    "facilities": [
+        {
+            "name": "Kurishumala Retreat Lodge",
+            "icon": "hotel-icon.png",
+            "type": "Accommodation"
+        },
+        {
+            "name": "Hillside Tea Café",
+            "icon": "restaurant-icon.jpg",
+            "type": "Restaurant"
+        },
+        {
+            "name": "Kurishumala Pilgrim Center",
+            "icon": "info-icon.png",
+            "type": "Info Center"
+        },
+        {
+            "name": "Kurishumala Health Post",
+            "icon": "medical-icon.png",
+            "type": "Hospital"
+        }
+    ],
+    "ratingDistribution": {
+        "5": 70,
+        "4": 20,
+        "3": 7,
+        "2": 2,
+        "1": 1
+    },
+    "reviews": [
+        {
+            "user": "Anil R",
+            "stars": "⭐⭐⭐⭐⭐",
+            "date": "March 10, 2024",
+            "activity": "Trekking",
+            "text": "A peaceful and scenic trail with breathtaking views. Ideal for those seeking serenity.",
+            "images": ["kurishumala3.jpg"]
+        },
+        {
+            "user": "Lakshmi M",
+            "stars": "⭐⭐⭐⭐",
+            "date": "Feb 22, 2024",
+            "activity": "Hiking",
+            "text": "A must-visit for a relaxing trek. The views from the top are worth the climb.",
+            "images": []
+        }
+    ]
+}
+}
